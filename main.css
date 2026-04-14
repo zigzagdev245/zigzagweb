@@ -1,14 +1,17 @@
 /********** Template CSS **********/
 
+/* Root Variables */
 :root {
     --bs-primary: #f2c4ce;
     --bs-primary-rgb: 242, 196, 206;
 }
 
+/* Utility Classes */
 .text-primary {
     color: var(--bs-primary) !important;
 }
 
+/* Back to Top */
 .back-to-top {
     position: fixed;
     display: none;
@@ -17,7 +20,7 @@
     z-index: 99;
 }
 
-/*** Spinner ***/
+/* Spinner */
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -35,7 +38,7 @@
     opacity: 1;
 }
 
-/*** Button ***/
+/* Button */
 .btn {
     font-weight: 600;
     transition: 0.5s;
@@ -82,16 +85,43 @@
 .btn:active {
     background: linear-gradient(135deg, #f58f7c 0%, #e7b7c6 100%) !important;
     border-color: #e7b7c6 !important;
-    color: #fff !important;
+    color: #ffffff !important;
 }
 
 .form-control:focus,
 .form-select:focus {
-    border-color: #ffffff !important;
-    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
+    border-color: #e7b7c6 !important;
+    box-shadow: 0 0 0 0.1rem #e7b7c6 !important;
 }
 
-/*** Navbar ***/
+.form-select {
+    height: calc(3.5rem + 2px);
+    padding: 1rem 0.75rem;
+}
+
+.custom-combobox {
+    color: #adb5bd;
+    cursor: pointer;
+    padding-right: 2.75rem;
+    background-position: right 0.9rem center;
+    background-size: 16px 12px;
+}
+
+.custom-combobox:focus,
+.custom-combobox:valid {
+    color: #ffffff;
+}
+
+.custom-combobox:required:invalid {
+    color: #adb5bd;
+}
+
+.custom-combobox option {
+    color: #ffffff;
+    background-color: #111111;
+}
+
+/* Navbar */
 .navbar {
     position: absolute;
     width: 100%;
@@ -116,42 +146,6 @@
     color: var(--bs-primary);
 }
 
-@media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link,
-    .navbar.bg-dark .navbar-nav .nav-link {
-        margin-right: 0;
-        padding: 10px 0;
-    }
-
-    .navbar .navbar-nav {
-        margin-top: 8px;
-        border-top: 1px solid var(--bs-light);
-    }
-}
-
-@media (min-width: 992px) {
-    .navbar.bg-dark .navbar-nav .nav-link {
-        padding: 20px 0;
-    }
-
-    .navbar .nav-item .dropdown-menu {
-        display: block;
-        border: none;
-        margin-top: 0;
-        top: 150%;
-        opacity: 0;
-        visibility: hidden;
-        transition: 0.5s;
-    }
-
-    .navbar .nav-item:hover .dropdown-menu {
-        top: 100%;
-        visibility: visible;
-        transition: 0.5s;
-        opacity: 1;
-    }
-}
-
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -161,6 +155,32 @@
     margin-left: 8px;
 }
 
+/* Dropdown */
+.custom-dropdown {
+    background: #111;
+    width: 280px;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.navbar .nav-item.show .dropdown-menu.custom-dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-dropdown .dropdown-item {
+    color: #fff;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.custom-dropdown .dropdown-item:hover {
+    color: var(--bs-primary);
+    background-color: transparent;
+}
+
+/* Header */
 .header-brand {
     padding: 0;
 }
@@ -182,7 +202,6 @@
     text-transform: uppercase;
 }
 
-/*** Header ***/
 .carousel-caption {
     top: 0;
     left: 0;
@@ -204,30 +223,7 @@
     height: 3rem;
 }
 
-@media (max-width: 768px) {
-    #header-carousel .carousel-item {
-        position: relative;
-        min-height: 550px;
-    }
-
-    #header-carousel .carousel-item img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .header-logo {
-        width: 34px;
-        height: 34px;
-    }
-
-    .header-brand-text {
-        font-size: 1.15rem;
-        letter-spacing: 0.1rem;
-    }
-}
-
+/* Page Header */
 .page-header {
     padding-top: 200px;
     background:
@@ -240,7 +236,7 @@
     color: var(--bs-white);
 }
 
-/*** Title ***/
+/* Title */
 .title {
     margin-bottom: 2rem;
 }
@@ -298,7 +294,7 @@
     border-bottom: 1px solid var(--bs-white);
 }
 
-/*** Service ***/
+/* Service */
 .service-item {
     position: relative;
     margin-top: 2.5rem;
@@ -333,16 +329,7 @@
     background: linear-gradient(to left, var(--bs-secondary), var(--bs-dark));
 }
 
-@media (max-width: 767.98px) {
-    .service-item.service-item-left,
-    .service-item.service-item-right {
-        border-radius: 500px 500px 0 0;
-        background: linear-gradient(to bottom, var(--bs-secondary), var(--bs-dark));
-        text-align: center;
-    }
-}
-
-/*** Team ***/
+/* Team */
 .team-item {
     position: relative;
 }
@@ -407,7 +394,7 @@
     transition-delay: 0.2s;
 }
 
-/*** Testimonial ***/
+/* Testimonial */
 .testimonial-carousel {
     max-width: 700px;
     margin: 0 auto;
@@ -446,7 +433,7 @@
     opacity: 1;
 }
 
-/*** Footer ***/
+/* Footer */
 @keyframes footerAnimatedBg {
     0% {
         background-position: 0 0;
@@ -526,6 +513,96 @@
     color: #ffffff;
 }
 
+/* Responsive Media Queries */
+
+/* Navbar Responsive */
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav .nav-link,
+    .navbar.bg-dark .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar .navbar-nav {
+        margin-top: 8px;
+        border-top: 1px solid var(--bs-light);
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar.bg-dark .navbar-nav .nav-link {
+        padding: 20px 0;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+
+    /* Dropdown hiện khi click (open state) */
+    .navbar .nav-item.show .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        top: 100%;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* Giữ hover rule để tương thích với Bootstrap */
+    .navbar .nav-item:hover .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        top: 100%;
+        visibility: visible;
+        transition: 0.5s;
+        opacity: 1;
+    }
+}
+
+/* Header Responsive */
+@media (max-width: 768px) {
+    .header-brand {
+        margin-left: 24px;
+    }
+
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 550px;
+    }
+
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .header-logo {
+        width: 34px;
+        height: 34px;
+    }
+
+    .header-brand-text {
+        font-size: 1.15rem;
+        letter-spacing: 0.1rem;
+    }
+}
+
+/* Service Responsive */
+@media (max-width: 767.98px) {
+    .service-item.service-item-left,
+    .service-item.service-item-right {
+        border-radius: 500px 500px 0 0;
+        background: linear-gradient(to bottom, var(--bs-secondary), var(--bs-dark));
+        text-align: center;
+    }
+}
+
+/* Footer Responsive */
 @media (max-width: 575.98px) {
     .footer-logo {
         width: 52px;
@@ -539,5 +616,35 @@
 
     .contact-footer .footer-brand {
         gap: 0.75rem !important;
+    }
+
+    .contact-footer .row {
+        gap: 1.5rem;
+    }
+
+    .contact-footer .col-3,
+    .contact-footer .col-6 {
+        padding-top: 0;
+    }
+
+    .contact-footer h5 {
+        font-size: 1rem;
+    }
+
+    .contact-footer-item {
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .contact-footer-item p {
+        margin-bottom: 0;
+    }
+
+    .contact-footer-divider {
+        margin: 1.5rem auto;
+    }
+
+    .contact-footer .d-flex.flex-wrap {
+        justify-content: center;
     }
 }

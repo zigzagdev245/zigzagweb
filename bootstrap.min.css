@@ -2260,8 +2260,7 @@ textarea.form-control-lg {
 .form-floating {
     position: relative;
 }
-.form-floating > .form-control,
-.form-floating > .form-select {
+.form-floating > .form-control {
     height: calc(3.5rem + 2px);
     padding: 1rem 0.75rem;
 }
