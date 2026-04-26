@@ -1,0 +1,14 @@
+body {
+    background-color: #051424;
+    color: #d4e4fa;
+}
+
+.glass-card {
+    background: rgba(18, 33, 49, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.electric-glow:hover {
+    box-shadow: 0 0 40px rgba(0, 67, 235, 0.15);
+}
