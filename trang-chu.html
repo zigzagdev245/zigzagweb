@@ -1,0 +1,231 @@
+<!doctype html>
+
+<html class="dark" lang="vi">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <script src="assets/js/tailwind-config.js"></script>
+        <script defer src="assets/js/site.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <link href="assets/css/trang-chu.css" rel="stylesheet" />
+    </head>
+    <body class="bg-background text-on-surface font-body-md selection:bg-secondary-container selection:text-white">
+        <!-- TopAppBar -->
+        <header class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-0 border-b border-transparent transition-all duration-300" data-site-header id="site-header">
+            <nav class="flex justify-between items-center max-w-[1280px] mx-auto px-8 py-6">
+                <div class="text-2xl font-black text-white tracking-tighter font-headline-lg">ZIGZAG MEDIA</div>
+                <div class="hidden md:flex items-center gap-10">
+                    <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-blue-500 border-b-2 border-blue-500 pb-1" href="trang-chu.html">Trang chủ</a>
+                    <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-white/60 hover:text-white transition-colors" href="su-kien.html">Sự kiện</a>
+                    <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-white/60 hover:text-white transition-colors" href="dich-vu.html">Dịch vụ</a>
+                    <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-white/60 hover:text-white transition-colors" href="doi-tac.html">Đối tác</a>
+                    <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-white/60 hover:text-white transition-colors" href="lien-he.html">Liên hệ</a>
+                </div>
+                <button class="bg-secondary-container text-white px-8 py-3 rounded-full font-epilogue text-[13px] font-semibold tracking-widest uppercase hover:opacity-80 transition-all duration-300 scale-95 active:scale-90">BOOKING</button>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="relative h-screen flex items-center justify-center overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <img alt="Cinematic production background" class="w-full h-full object-cover brightness-50" data-alt="Cinematic wide shot of a high-tech esports arena with dramatic blue and purple stage lighting and large digital screens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0ZOieK8mA3ekIAlmAcF4Ap5a1GRHNY_1TFcLeWSsKxK4aZbcajc50uTPlLZGimBVJ3L9sPmmQgs6iIxO2ldosi4eIAH2sH5ZU82Uxclpapo_UBM39SiPCWH7f2NKXcOLp9NnSJ2zwgH5A-5jzlU3E4GspLTr4KCm6dLxIhGhw8BbCz0Yzpf8NbkNz8VU1dEwBJW30Y72rTUWaoTNboUzBYD1XD2iLwEdyHw9hCK3xss9B7oRPMHFMXTzbHdRfx34KqEFoHgPeHPk" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+                    <div class="absolute inset-0 hero-gradient"></div>
+                </div>
+                <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 glass-card rounded-full mb-8">
+                        <span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+                        <span class="text-label-caps font-label-caps uppercase text-white/80">Leading Media Agency in SE Asia</span>
+                    </div>
+                    <h1 class="text-display-xl font-display-xl text-white mb-6">ĐỈNH CAO <br /><span class="text-secondary">TRUYỀN THÔNG</span> SỐ</h1>
+                    <p class="text-body-lg font-body-lg text-white/60 max-w-2xl mx-auto mb-10">Chúng tôi kiến tạo những trải nghiệm cinematic đỉnh cao, kết nối hàng triệu khán giả thông qua các sự kiện esports và giải trí kỹ thuật số hàng đầu.</p>
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                        <a href="#service" class="bg-secondary-container text-white px-10 py-5 rounded-full font-label-caps text-label-caps hover:brightness-110 transition-all">KHÁM PHÁ DỰ ÁN</a>
+                        <a href="#about" class="border border-white/100 text-white px-10 py-5 rounded-full font-label-caps text-label-caps hover:bg-white/10 transition-all">VỀ CHÚNG TÔI</a>
+                    </div>
+                </div>
+                <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/30 animate-bounce">
+                    <span class="material-symbols-outlined text-3xl">keyboard_double_arrow_down</span>
+                </div>
+            </section>
+
+            <!-- About Us Section (Bento Style) -->
+            <section class="py-section-padding px-8 max-w-container-max mx-auto" id="about">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                    <div class="md:col-span-8">
+                        <h2 class="text-headline-lg font-headline-lg text-white mb-8">CHÚNG TÔI LÀ <br /><span class="text-secondary">ZIGZAG MEDIA</span></h2>
+                        <p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">Khởi đầu từ niềm đam mê esports, chúng tôi đã vươn mình trở thành hệ sinh thái truyền thông và tổ chức sự kiện đa nền tảng. Với tư duy "Cinematic Precision", mỗi khung hình và mỗi khoảnh khắc đều được trau chuốt để đạt đến sự hoàn mỹ.</p>
+                    </div>
+                    <div class="md:col-span-4 flex items-end justify-end">
+                        <div class="text-right">
+                            <div class="text-[80px] font-black text-secondary leading-none">2+</div>
+                            <div class="text-label-caps font-label-caps text-white/40">NĂM KINH NGHIỆM</div>
+                        </div>
+                    </div>
+                    <!-- Bento Cards -->
+                    <div class="md:col-span-4 glass-card p-10 rounded-lg flex flex-col justify-between group hover:border-blue-500/50 transition-all">
+                        <span class="material-symbols-outlined text-secondary text-4xl mb-12">videocam</span>
+                        <div>
+                            <h3 class="text-headline-md font-headline-md text-white mb-4">Sản xuất Media</h3>
+                            <p class="text-on-surface-variant">Livestream chuyên nghiệp, TVC quảng cáo và nội dung sáng tạo chuẩn 4K.</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-4 glass-card p-10 rounded-lg flex flex-col justify-between group hover:border-blue-500/50 transition-all">
+                        <span class="material-symbols-outlined text-secondary text-4xl mb-12">event_available</span>
+                        <div>
+                            <h3 class="text-headline-md font-headline-md text-white mb-4">Tổ chức Sự kiện</h3>
+                            <p class="text-on-surface-variant">Từ offline tournament đến các gala dinner sang trọng quy mô hàng nghìn người.</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-4 glass-card p-10 rounded-lg flex flex-col justify-between group hover:border-blue-500/50 transition-all">
+                        <span class="material-symbols-outlined text-secondary text-4xl mb-12">campaign</span>
+                        <div>
+                            <h3 class="text-headline-md font-headline-md text-white mb-4">Talent Agency</h3>
+                            <p class="text-on-surface-variant">Quản lý và phát triển cộng đồng KOLs, Caster hàng đầu trong ngành giải trí.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Chặng đường phát triển Section -->
+            <section class="py-section-padding bg-surface-container-lowest relative overflow-hidden">
+                <div class="max-w-container-max mx-auto px-8 relative z-10">
+                    <div class="text-center mb-20">
+                        <span class="text-label-caps font-label-caps text-secondary uppercase mb-4 block">Hành trình</span>
+                        <h2 class="text-headline-lg font-headline-lg text-white">CHẶNG ĐƯỜNG PHÁT TRIỂN</h2>
+                    </div>
+                    <div class="relative max-w-4xl mx-auto">
+                        <div class="hidden md:block absolute top-[125px] left-[22%] right-[22%] h-[1px] timeline-line"></div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-10 relative">
+                            <div class="timeline-item flex flex-col items-center text-center group">
+                                <div class="mb-6 md:mb-10 order-2 md:order-1">
+                                    <h4 class="text-headline-md font-headline-md text-secondary mb-2">2025</h4>
+                                    <p class="text-white font-medium">Khởi đầu hành trình ZIGZAG</p>
+                                </div>
+                                <div class="relative z-20 order-1 md:order-2">
+                                    <div class="timeline-dot w-6 h-6 rounded-full bg-background border-4 border-secondary shadow-[0_0_15px_rgba(184,195,255,0.5)] group-hover:scale-125 transition-transform duration-300"></div>
+                                </div>
+                                <div class="mt-6 md:mt-10 order-3">
+                                    <p class="text-on-surface-variant text-sm max-w-[260px]">Đặt nền móng hệ sinh thái truyền thông sáng tạo, tập trung vào chất lượng thực thi và trải nghiệm thương hiệu.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item flex flex-col items-center text-center group">
+                                <div class="mb-6 md:mb-10 order-2 md:order-1">
+                                    <h4 class="text-headline-md font-headline-md text-secondary mb-2">2026</h4>
+                                    <p class="text-white font-medium">Tăng tốc và mở rộng</p>
+                                </div>
+                                <div class="relative z-20 order-1 md:order-2">
+                                    <div class="timeline-dot w-6 h-6 rounded-full bg-background border-4 border-secondary shadow-[0_0_15px_rgba(184,195,255,0.5)] group-hover:scale-125 transition-transform duration-300"></div>
+                                </div>
+                                <div class="mt-6 md:mt-10 order-3">
+                                    <p class="text-on-surface-variant text-sm max-w-[260px]">Mở rộng quy mô sản xuất và chuẩn hóa quy trình để triển khai các chiến dịch có tầm ảnh hưởng lớn hơn.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Giới thiệu dịch vụ Section -->
+            <section class="py-section-padding relative overflow-hidden" id="service">
+                <div class="max-w-container-max mx-auto px-8">
+                    <div class="text-center mb-16">
+                        <span class="text-label-caps font-label-caps text-secondary uppercase mb-4 block tracking-[0.2em]">Our Values</span>
+                        <h2 class="text-headline-lg font-headline-lg text-white">CHÚNG TÔI MANG LẠI</h2>
+                    </div>
+                    <div class="relative group">
+                        <!-- Navigation Arrows -->
+                        <button class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 z-20 w-12 h-12 rounded-full glass-card flex items-center justify-center text-white hover:bg-secondary-container transition-all opacity-0 group-hover:opacity-100 hidden md:flex">
+                            <span class="material-symbols-outlined">chevron_left</span>
+                        </button>
+                        <button class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 z-20 w-12 h-12 rounded-full glass-card flex items-center justify-center text-white hover:bg-secondary-container transition-all opacity-0 group-hover:opacity-100 hidden md:flex">
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </button>
+                        <!-- Slider Container -->
+                        <div class="flex overflow-x-auto gap-8 no-scrollbar scroll-smooth pb-8 snap-x">
+                            <!-- Value Card 1 -->
+                            <div class="min-w-[320px] md:min-w-[400px] snap-center">
+                                <div class="glass-card p-10 rounded-lg h-full hover:border-secondary/50 transition-all border-l-4 border-l-secondary">
+                                    <div class="w-16 h-16 rounded-2xl bg-secondary-container/20 flex items-center justify-center mb-8">
+                                        <span class="material-symbols-outlined text-secondary text-3xl">auto_awesome</span>
+                                    </div>
+                                    <h3 class="text-headline-md font-headline-md text-white mb-4">Creative Excellence</h3>
+                                    <p class="text-on-surface-variant leading-relaxed">Đội ngũ sáng tạo luôn dẫn đầu xu hướng, tạo ra những sản phẩm hình ảnh và nội dung đột phá, đậm chất cinematic.</p>
+                                </div>
+                            </div>
+                            <!-- Value Card 2 -->
+                            <div class="min-w-[320px] md:min-w-[400px] snap-center">
+                                <div class="glass-card p-10 rounded-lg h-full hover:border-secondary/50 transition-all border-l-4 border-l-secondary">
+                                    <div class="w-16 h-16 rounded-2xl bg-secondary-container/20 flex items-center justify-center mb-8">
+                                        <span class="material-symbols-outlined text-secondary text-3xl">strategy</span>
+                                    </div>
+                                    <h3 class="text-headline-md font-headline-md text-white mb-4">Strategic Planning</h3>
+                                    <p class="text-on-surface-variant leading-relaxed">Tư vấn chiến lược truyền thông đa kênh, tối ưu hóa mức độ nhận diện thương hiệu trong cộng đồng trẻ và gaming.</p>
+                                </div>
+                            </div>
+                            <!-- Value Card 3 -->
+                            <div class="min-w-[320px] md:min-w-[400px] snap-center">
+                                <div class="glass-card p-10 rounded-lg h-full hover:border-secondary/50 transition-all border-l-4 border-l-secondary">
+                                    <div class="w-16 h-16 rounded-2xl bg-secondary-container/20 flex items-center justify-center mb-8">
+                                        <span class="material-symbols-outlined text-secondary text-3xl">memory</span>
+                                    </div>
+                                    <h3 class="text-headline-md font-headline-md text-white mb-4">Technical Innovation</h3>
+                                    <p class="text-on-surface-variant leading-relaxed">Sở hữu hệ thống trang thiết bị livestream và sản xuất hiện đại nhất, ứng dụng công nghệ AR/VR vào thực tế.</p>
+                                </div>
+                            </div>
+                            <!-- Value Card 4 -->
+                            <div class="min-w-[320px] md:min-w-[400px] snap-center">
+                                <div class="glass-card p-10 rounded-lg h-full hover:border-secondary/50 transition-all border-l-4 border-l-secondary">
+                                    <div class="w-16 h-16 rounded-2xl bg-secondary-container/20 flex items-center justify-center mb-8">
+                                        <span class="material-symbols-outlined text-secondary text-3xl">verified</span>
+                                    </div>
+                                    <h3 class="text-headline-md font-headline-md text-white mb-4">Professional Execution</h3>
+                                    <p class="text-on-surface-variant leading-relaxed">Quy trình vận hành chuyên nghiệp, cam kết tiến độ và chất lượng dịch vụ ở mức cao nhất cho khách hàng.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="py-section-padding relative overflow-hidden">
+                <div class="absolute inset-0 bg-secondary-container/10 -z-10"></div>
+                <div class="max-w-4xl mx-auto px-8 text-center">
+                    <h2 class="text-headline-lg font-headline-lg text-white mb-8">BẠN ĐÃ SẴN SÀNG ĐỂ TẠO NÊN <br /><span class="text-secondary">SỰ KHÁC BIỆT?</span></h2>
+                    <p class="text-body-lg font-body-lg text-on-surface-variant mb-12">Liên hệ với chúng tôi ngay hôm nay để nhận được sự tư vấn chuyên sâu về các giải pháp media và sự kiện hàng đầu.</p>
+                    <a class="inline-block bg-white text-black px-8 py-4 rounded-full font-headline-lg text-[20px] hover:scale-105 transition-transform" href="lien-he.html">LIÊN HỆ NGAY</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-[#0a0a0a] w-full py-20 border-t border-white/5">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-12 max-w-[1280px] mx-auto px-8">
+                <div class="text-center md:text-left">
+                    <div class="text-xl font-bold text-white mb-4">ZIGZAG MEDIA</div>
+                    <p class="text-white/30 font-epilogue text-[11px] tracking-[0.2em] uppercase font-medium">© 2026 . Toàn bộ bản quyền thuộc về ZIGZAG Media.</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <a class="font-epilogue text-[11px] tracking-[0.2em] uppercase font-medium text-white/30 hover:text-blue-400 transition-colors" href="#">Privacy Policy</a>
+                    <a class="font-epilogue text-[11px] tracking-[0.2em] uppercase font-medium text-white/30 hover:text-blue-400 transition-colors" href="#">Terms of Service</a>
+                    <a class="font-epilogue text-[11px] tracking-[0.2em] uppercase font-medium text-white/30 hover:text-blue-400 transition-colors" href="#">Press Kit</a>
+                </div>
+                <div class="flex gap-6">
+                    <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all text-white/60 hover:text-white" href="#">
+                        <span class="material-symbols-outlined text-lg">public</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all text-white/60 hover:text-white" href="#">
+                        <span class="material-symbols-outlined text-lg">mail</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all text-white/60 hover:text-white" href="#">
+                        <span class="material-symbols-outlined text-lg">phone</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

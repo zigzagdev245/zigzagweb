@@ -1,0 +1,31 @@
+body {
+    background-color: #051424;
+    color: #d4e4fa;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-gradient {
+    background: radial-gradient(circle at 50% 50%, rgba(0, 67, 235, 0.15) 0%, transparent 70%);
+}
+
+.image-zoom:hover img {
+    transform: scale(1.05);
+}
+
+.timeline-line {
+    background: linear-gradient(to right, transparent, rgba(184, 195, 255, 0.3), transparent);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

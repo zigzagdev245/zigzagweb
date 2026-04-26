@@ -1,0 +1,171 @@
+<!doctype html>
+
+<html class="dark" lang="vi">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <script src="assets/js/tailwind-config.js"></script>
+        <script defer src="assets/js/site.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <link href="assets/css/su-kien.css" rel="stylesheet" />
+    </head>
+    <body class="bg-background text-on-surface font-body-md selection:bg-secondary-container selection:text-white overflow-x-hidden">
+        <!-- TopAppBar -->
+        <header class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-0 border-b border-transparent transition-all duration-300 h-24" data-site-header>
+            <div class="flex justify-between items-center max-w-[1280px] mx-auto px-8 py-6">
+                <div class="text-2xl font-black text-white tracking-tighter font-headline-lg">ZIGZAG MEDIA</div>
+                <nav class="hidden md:flex items-center gap-10">
+                    <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-white/60 hover:text-white transition-colors" href="trang-chu.html">Trang chủ</a>
+                    <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-blue-500 border-b-2 border-blue-500 pb-1" href="su-kien.html">Sự kiện</a>
+                    <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-white/60 hover:text-white transition-colors" href="dich-vu.html">Dịch vụ</a>
+                    <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-white/60 hover:text-white transition-colors" href="doi-tac.html">Đối tác</a>
+                    <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-white/60 hover:text-white transition-colors" href="lien-he.html">Liên hệ</a>
+                </nav>
+                <button class="bg-secondary-container text-white px-8 py-3 rounded-full font-epilogue text-[13px] font-semibold tracking-widest uppercase scale-95 active:scale-90 transition-transform hover:brightness-110 shadow-[0_0_20px_rgba(0,67,235,0.3)]">BOOKING</button>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="relative h-[614px] flex items-center justify-center overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <img alt="Hero" class="w-full h-full object-cover opacity-40 scale-105" data-alt="cinematic wide shot of a high-tech esports arena with vibrant blue lighting, large screens, and a massive crowd in silhouettes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzyByifts93cCL6_Bp-dg_MHK-jE07zgtrftTIcP_sg9EbveulBV_ADd_eJRpqA8TX42KJ1zRetbtNuWhFYU77wY2kF8MOz16mE7gBvK4LWcOIbk49NYDY_sAv7XxlgXWNSTtFkxEGM7zc5VKF2HbG4T-0fnd4NlRL00xBLKxZxA3czQhZbadnrsppELwA8sbL95G3_434qNyjyhB9O8CW7Vut3K2_YvRGevzabUhi3_mDFeiECeSAT2FWj3DyltsZOEJ3ZgeYces" />
+                    <div class="absolute inset-0 bg-gradient-to-b from-background/0 via-background/60 to-background"></div>
+                </div>
+                <div class="relative z-10 text-center px-8">
+                    <span class="font-label-caps text-secondary mb-4 block tracking-[0.3em]">CINEMATIC EXPERIENCES</span>
+                    <h1 class="text-display-xl font-display-xl text-white mb-6">SỰ KIỆN</h1>
+                    <p class="text-body-lg font-body-lg text-white/60 max-w-2xl mx-auto">Định nghĩa lại tiêu chuẩn truyền thông và tổ chức sự kiện chuyên nghiệp tại Việt Nam.</p>
+                </div>
+            </section>
+
+            <!-- Filter Bar -->
+            <section class="max-w-container-max mx-auto px-8 mb-16">
+                <div class="flex flex-wrap items-center justify-between gap-6 pb-8 border-b border-white/5">
+                    <div class="flex gap-4">
+                        <button class="bg-secondary-container text-white px-6 py-2 rounded-full font-label-caps uppercase transition-all duration-300">Tất cả</button>
+                        <button class="border border-white/20 text-white/60 hover:text-white hover:border-white/40 px-6 py-2 rounded-full font-label-caps uppercase transition-all duration-300">E-sports</button>
+                        <button class="border border-white/20 text-white/60 hover:text-white hover:border-white/40 px-6 py-2 rounded-full font-label-caps uppercase transition-all duration-300">Music</button>
+                        <button class="border border-white/20 text-white/60 hover:text-white hover:border-white/40 px-6 py-2 rounded-full font-label-caps uppercase transition-all duration-300">Corporate</button>
+                    </div>
+                    <div class="flex items-center gap-2 text-white/40 font-label-caps uppercase tracking-widest">
+                        <span>Sắp xếp theo:</span>
+                        <button class="text-white flex items-center gap-1 group">
+                            Mới nhất
+                            <span class="material-symbols-outlined text-sm group-hover:translate-y-1 transition-transform">expand_more</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bento Grid Events -->
+            <section class="max-w-container-max mx-auto px-8 pb-32">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                    <!-- Featured Event Large -->
+                    <div class="md:col-span-8 group relative overflow-hidden rounded-lg glass-card aspect-[16/10] md:aspect-auto md:h-[600px]">
+                        <img alt="Featured" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="dynamic stage performance with intense spotlights, hazy atmosphere, and a silhouette of a DJ performing for a large crowd" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCg0PqE49xXh0NcgKFoiq55O-vVToXSkv3E0OLomchQefIEDTYPYA8hd0o6Q-1F8MyrvizgITL84kzqeFmtehXQNil7zWBOt4FG6M6tTOkGDcKbmSdkheSSaGdaxt8y2dHh6sZ2wGEcA7EP7ag7A90_KxjaeSjs_2tD1R5f4ZtbuZtqIcqGXsUVbvQ8qr5TMbZB50_w6UwBvl6kDeLiVjYz7-Bxg1IYRxLZPSFtJdTY60WVm0Q34iPV7UHLWiHT8LDPY04cvzea4U" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-0 left-0 p-10 w-full">
+                            <div class="flex items-center gap-4 mb-4">
+                                <span class="bg-secondary-container/20 backdrop-blur-md border border-secondary-container/30 text-secondary-fixed text-[10px] px-3 py-1 rounded-full uppercase tracking-widest font-bold">LIVE PRODUCTION</span>
+                                <span class="text-white/60 font-label-caps">15 THÁNG 12, 2024</span>
+                            </div>
+                            <h2 class="font-headline-lg text-white mb-6 uppercase">VIETNAM ESPORTS CHAMPIONSHIP</h2>
+                            <div class="flex items-center gap-8">
+                                <button class="bg-white text-black px-8 py-3 rounded-full font-epilogue text-[13px] font-bold uppercase tracking-wider hover:bg-secondary-container hover:text-white transition-all duration-300">Xem chi tiết</button>
+                                <div class="flex -space-x-4">
+                                    <div class="w-10 h-10 rounded-full border-2 border-background bg-zinc-800 flex items-center justify-center text-[10px] font-bold">50k+</div>
+                                    <div class="w-10 h-10 rounded-full border-2 border-background overflow-hidden">
+                                        <img alt="Attendee" data-alt="portrait of a young smiling man professional headshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh8_mEm06BukWjXOX49jjByPLXKHBZVgUc38-QUCkb2B1CNeYXFasF3YnbzvT422tFgauXy844VrJry0wY3vZz5eOER_E6ANKq6iJcNsu-00AEvvS-hbZxg4ztKgP_EfQWBDa_PRSU3rwnOaNzZ4b11y2NVh4Oqc-_Iwz_Q79LdKSt5CQSQZubBgjiDyLnfcGEnQVgRrvnE2pilufYVjFV8q6N50RSgk7EjHJ14Q2jrZsZhnzTIEVbXf1lTpD0TEHCAG0OVfqkgd0" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Secondary Event Vertical -->
+                    <div class="md:col-span-4 group relative overflow-hidden rounded-lg glass-card flex flex-col">
+                        <div class="h-1/2 relative overflow-hidden">
+                            <img alt="Corporate" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="elegant corporate banquet hall with crystal chandeliers, white table linens, and warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0b-9w6yJlKBULDrpyzFpDU8D2KDvvIyhlxh1Mlq3y7GHZafKFakMNb1tQ7xyuzL4nWyQBklt78ieIWz8Kev5zZNU0-ygbR_1u-sR8bmiqrRu74U5SuE_fbqu6o0xFqHoQ-GW_IrAwk65iH6QnC72lmAFvTb0PKpNrDNk1NjimalnA7OVcVCXFshNZZvtjWwuzd-X8ZZs1U49dqCHF7929E1ydDkfyC6ICyfp7ap3E0LOgdebaPgwABxEJbtpNplJf9B32navIAXw" />
+                            <div class="absolute top-6 right-6">
+                                <span class="bg-white/10 backdrop-blur-xl border border-white/20 text-white text-[10px] px-4 py-2 rounded-full uppercase tracking-widest font-bold">CORPORATE</span>
+                            </div>
+                        </div>
+                        <div class="p-8 flex flex-col justify-between flex-grow">
+                            <div>
+                                <p class="text-blue-500 font-label-caps mb-2">20 THÁNG 11, 2024</p>
+                                <h3 class="font-headline-md text-white mb-4 leading-tight uppercase">Tech Innovators Summit 2024</h3>
+                                <p class="text-on-surface-variant line-clamp-3 mb-8">Nơi hội tụ những bộ óc hàng đầu trong ngành công nghệ, mang đến những trải nghiệm nghe nhìn đẳng cấp quốc tế.</p>
+                            </div>
+                            <a class="flex items-center gap-2 text-white font-label-caps uppercase group/btn tracking-widest" href="#">
+                                Xem chi tiết
+                                <span class="material-symbols-outlined text-lg group-hover/btn:translate-x-2 transition-transform">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="md:col-span-4 group relative overflow-hidden rounded-lg glass-card aspect-square">
+                        <img alt="Music" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="vibrant nightlife scene at a music festival with colorful laser lights and a crowd dancing in front of a massive stage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFZMBonhBem5tQGdTlYiHca5x3dBHoiTzhPm95L1MAAXCx3qx9WYpzFHCGF02Q-IO8rCoaBP-iPRZ6s17xbthEQDARhcSJ7acr_Io1IdFjnlTrU2AgOioZ7-frItiy69d_3I8LLi_bPRiVVKFb3Ucr4qWUGCxfVzD1Sd0AeZLG4zRwDqNL09nJ-8XGUNFScPyY0aUIQJkoSgd-1PBmKjO1NCIttJR37AoYSMYGTG0cNxAM8KA52dYFxmgGE_D08LdpnZipAgai8U0" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8">
+                            <span class="text-blue-500 font-label-caps mb-2 block uppercase">Music Festival</span>
+                            <h3 class="font-headline-md text-white mb-6 uppercase text-xl">Sonic Pulse Night</h3>
+                            <a class="text-white/40 hover:text-white transition-colors uppercase font-label-caps flex items-center gap-2" href="#"> Xem dự án <span class="material-symbols-outlined text-sm">open_in_new</span> </a>
+                        </div>
+                    </div>
+                    <div class="md:col-span-8 group relative overflow-hidden rounded-lg glass-card">
+                        <div class="flex flex-col md:flex-row h-full">
+                            <div class="md:w-1/2 p-10 flex flex-col justify-center">
+                                <span class="bg-white/5 border border-white/10 w-fit px-4 py-1 rounded-full text-[10px] text-white/60 mb-6 uppercase tracking-widest">Ongoing</span>
+                                <h3 class="font-headline-lg text-white mb-6 uppercase text-3xl">Garena Free Fire: Spring Tournament</h3>
+                                <p class="text-on-surface-variant mb-8">Giải đấu esports quy mô toàn quốc với hệ thống streaming 4K và công nghệ AR tiên tiến.</p>
+                                <div class="flex gap-4">
+                                    <button class="bg-secondary-container text-white px-8 py-3 rounded-full font-epilogue text-[12px] font-bold uppercase tracking-wider">Xem chi tiết</button>
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 relative overflow-hidden">
+                                <img alt="Esports" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="close-up of professional gaming peripherals glowing in blue light with a blurred esports tournament screen in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAnQjLqgtIQY0YBRjqS3YntLjCMhm0EtxVDu4DGkBZgxPOz4gFa1rCQc5e0yubsDm6JqOYEfDVQz2WrYU4o3B9HUE1RWE7JIM9kHv3k6JAywZpVC_dDD2P6ehVHeJaprdeKzdaGLhVv-66lszU28JBiuXQuLjVLmudfFAeVZeFXHiX6yRcpnPogvIcOrv5PVggdYxBe7C8_c5VviIANg7w2IBmmtspVuE2pkc5ICOjVSpRk1UL3SS7l69t30cbmkwsHuEvZLI2xcw" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CTA Section -->
+                <div class="mt-32 p-16 rounded-lg glass-card relative overflow-hidden border border-blue-500/20 text-center">
+                    <div class="absolute -top-24 -right-24 w-64 h-64 bg-blue-600/10 blur-[100px] rounded-full"></div>
+                    <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-blue-600/10 blur-[100px] rounded-full"></div>
+                    <h2 class="font-headline-lg text-white mb-6 uppercase tracking-tight">Bạn đang lên kế hoạch cho một sự kiện bùng nổ?</h2>
+                    <p class="text-on-surface-variant mb-10 max-w-2xl mx-auto">Chúng tôi cung cấp giải pháp media và tổ chức sự kiện toàn diện, từ ý tưởng đến thực thi với độ chính xác cao nhất.</p>
+                    <button class="bg-white text-black px-12 py-4 rounded-full font-epilogue text-[14px] font-bold uppercase tracking-[0.2em] hover:bg-blue-500 hover:text-white transition-all duration-300">Liên hệ hợp tác</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-[#0a0a0a] w-full py-20 border-t border-white/5">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-12 max-w-[1280px] mx-auto px-8">
+                <div class="text-center md:text-left">
+                    <div class="text-xl font-bold text-white mb-4">ZIGZAG MEDIA</div>
+                    <p class="text-white/30 font-epilogue text-[11px] tracking-[0.2em] uppercase font-medium">© 2026 . Toàn bộ bản quyền thuộc về ZIGZAG Media.</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <a class="font-epilogue text-[11px] tracking-[0.2em] uppercase font-medium text-white/30 hover:text-blue-400 transition-colors" href="#">Privacy Policy</a>
+                    <a class="font-epilogue text-[11px] tracking-[0.2em] uppercase font-medium text-white/30 hover:text-blue-400 transition-colors" href="#">Terms of Service</a>
+                    <a class="font-epilogue text-[11px] tracking-[0.2em] uppercase font-medium text-white/30 hover:text-blue-400 transition-colors" href="#">Press Kit</a>
+                </div>
+                <div class="flex gap-6">
+                    <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all text-white/60 hover:text-white" href="#">
+                        <span class="material-symbols-outlined text-lg">public</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all text-white/60 hover:text-white" href="#">
+                        <span class="material-symbols-outlined text-lg">mail</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all text-white/60 hover:text-white" href="#">
+                        <span class="material-symbols-outlined text-lg">phone</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
