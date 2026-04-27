@@ -4,11 +4,11 @@
     <head>
         <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Liên hệ | Zigzag Media</title>
         <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
         <script src="assets/js/tailwind-config.js"></script>
         <script defer src="assets/js/site.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
         <link href="assets/css/lien-he.css" rel="stylesheet" />
     </head>
@@ -16,7 +16,7 @@
         <!-- TopAppBar -->
         <nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-0 border-b border-transparent transition-all duration-300" data-site-header>
             <div class="flex justify-between items-center max-w-[1280px] mx-auto px-8 py-6">
-                <div class="text-2xl font-black text-white tracking-tighter font-headline-lg">ZIGZAG MEDIA</div>
+                <div class="text-2xl font-black text-white tracking-tighter font-headline-lg"><a href="trang-chu.html">ZIGZAG MEDIA</a></div>
                 <div class="hidden md:flex items-center gap-10">
                     <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-white/60 hover:text-white transition-colors" href="trang-chu.html">Trang chủ</a>
                     <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-white/60 hover:text-white transition-colors" href="su-kien.html">Sự kiện</a>
@@ -24,7 +24,7 @@
                     <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-white/60 hover:text-white transition-colors" href="doi-tac.html">Đối tác</a>
                     <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-blue-500 border-b-2 border-blue-500 pb-1" href="lien-he.html">Liên hệ</a>
                 </div>
-                <button class="bg-secondary-container text-white px-8 py-3 rounded-full font-epilogue text-[13px] font-semibold tracking-widest uppercase hover:opacity-80 transition-all duration-300 scale-95 active:scale-90">BOOKING</button>
+                <div class="w-[157px]"></div>
             </div>
         </nav>
 
@@ -34,7 +34,7 @@
                 <div class="flex flex-col gap-6 max-w-3xl">
                     <span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em]">Connect with us</span>
                     <h1 class="font-display-xl text-display-xl text-white">LET'S CREATE <span class="text-secondary">IMPACT</span> TOGETHER.</h1>
-                    <p class="font-body-lg text-body-lg text-on-surface-variant">Sẵn sàng nâng tầm sự kiện và chiến dịch truyền thông của bạn? Đội ngũ chuyên gia của chúng tôi luôn sẵn sàng lắng nghe và hiện thực hóa những ý tưởng táo bạo nhất.</p>
+                    <p id="contact" class="font-body-lg text-body-lg text-on-surface-variant">Sẵn sàng nâng tầm sự kiện và chiến dịch truyền thông của bạn? Đội ngũ chuyên gia của chúng tôi luôn sẵn sàng lắng nghe và hiện thực hóa những ý tưởng táo bạo nhất.</p>
                 </div>
             </section>
 
@@ -104,14 +104,10 @@
                         <p class="font-label-caps text-label-caps text-on-surface-variant mb-6 uppercase">Theo dõi chúng tôi</p>
                         <div class="flex gap-4">
                             <a class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center border border-white/5 hover:border-secondary/50 hover:bg-secondary/10 transition-all" href="#" aria-label="Facebook">
-                                <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                    <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.7-1.6h1.5V4.8c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 4v2.2H8v3h2.6v8h2.9z" />
-                                </svg>
+                                <img class="w-6 h-6 invert" src="assets/img/svg/fb.svg" alt="Facebook" />
                             </a>
                             <a class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center border border-white/5 hover:border-secondary/50 hover:bg-secondary/10 transition-all" href="#" aria-label="YouTube">
-                                <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                    <path d="M23.5 7.2a3 3 0 0 0-2.1-2.1C19.5 4.6 12 4.6 12 4.6s-7.5 0-9.4.5A3 3 0 0 0 .5 7.2 31.9 31.9 0 0 0 0 12a31.9 31.9 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.9 31.9 0 0 0 24 12a31.9 31.9 0 0 0-.5-4.8zM9.6 15.5v-7L16 12l-6.4 3.5z" />
-                                </svg>
+                                <img class="w-6 h-6 invert" src="assets/img/svg/yt.svg" alt="YouTube" />
                             </a>
                         </div>
                     </div>
@@ -130,7 +126,9 @@
         <footer class="bg-[#0a0a0a] w-full py-20 border-t border-white/5">
             <div class="flex flex-col md:flex-row justify-between items-center gap-12 max-w-[1280px] mx-auto px-8">
                 <div class="text-center md:text-left">
-                    <div class="text-xl font-bold text-white mb-4">ZIGZAG MEDIA</div>
+                    <div class="text-xl font-bold text-white mb-4">
+                        <a href="trang-chu.html">ZIGZAG MEDIA</a>
+                    </div>
                     <p class="text-white/30 font-epilogue text-[11px] tracking-[0.2em] uppercase font-medium">© 2026 . Toàn bộ bản quyền thuộc về ZIGZAG Media.</p>
                 </div>
                 <div class="flex flex-wrap justify-center gap-8">
@@ -139,14 +137,11 @@
                     <a class="font-epilogue text-[11px] tracking-[0.2em] uppercase font-medium text-white/30 hover:text-blue-400 transition-colors" href="#">Press Kit</a>
                 </div>
                 <div class="flex gap-6">
-                    <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all text-white/60 hover:text-white" href="#">
+                    <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all text-white/60 hover:text-white" href="trang-chu.html">
                         <span class="material-symbols-outlined text-lg">public</span>
                     </a>
-                    <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all text-white/60 hover:text-white" href="#">
+                    <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all text-white/60 hover:text-white" href="lien-he.html#contact">
                         <span class="material-symbols-outlined text-lg">mail</span>
-                    </a>
-                    <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all text-white/60 hover:text-white" href="#">
-                        <span class="material-symbols-outlined text-lg">phone</span>
                     </a>
                 </div>
             </div>

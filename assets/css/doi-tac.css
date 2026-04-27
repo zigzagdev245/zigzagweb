@@ -3,20 +3,30 @@ body {
     color: #d4e4fa;
 }
 
-.glass-card {
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+.logo-item {
+    background: transparent;
+    backdrop-filter: none;
+    border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.logo-grid-item {
-    filter: grayscale(100%) brightness(200%);
-    opacity: 0.5;
-    transition: all 0.4s ease;
+.logo-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
-.logo-grid-item:hover {
-    filter: grayscale(0%) brightness(100%);
+.group-card .logo-item {
     opacity: 1;
-    transform: scale(1.05);
+    transition:
+        opacity 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.group-card:hover .logo-item {
+    opacity: 0.5;
+}
+
+.group-card:hover .logo-item:hover {
+    opacity: 1;
+    border-color: #b8c3ff;
 }
