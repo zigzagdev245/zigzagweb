@@ -7,16 +7,17 @@
         <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
         <title>Đối tác | Zigzag Media</title>
         <script src="assets/js/tailwind-config.js"></script>
-        <script defer src="assets/js/site.js"></script>
+
         <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <link href="assets/css/swiper-bundle.min.css" rel="stylesheet" />
         <link href="assets/css/doi-tac.css" rel="stylesheet" />
     </head>
-    <body class="bg-surface-dim text-on-surface font-body-md overflow-x-hidden">
+    <body class="bg-background font-body overflow-x-hidden">
         <!-- TopAppBar -->
         <header class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-0 border-b border-transparent transition-all duration-300" data-site-header>
             <div class="flex justify-between items-center max-w-[1280px] mx-auto px-8 py-6">
-                <div class="text-2xl font-black text-white tracking-tighter font-headline-lg"><a href="trang-chu.html">ZIGZAG MEDIA</a></div>
+                <div class="font-headline text-2xl font-black text-white tracking-tighter "><a href="trang-chu.html">ZIGZAG MEDIA</a></div>
                 <nav class="hidden md:flex items-center gap-10">
                     <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-white/60 hover:text-white transition-colors" href="trang-chu.html">Trang chủ</a>
                     <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-white/60 hover:text-white transition-colors" href="su-kien.html">Sự kiện</a>
@@ -37,60 +38,88 @@
                 </div>
                 <div class="relative z-10 max-w-[1280px] text-center">
                     <span class="font-label-caps text-secondary tracking-[0.3em] mb-6 block">TRUSTED NETWORK</span>
-                    <h1 class="text-display-xl font-display-xl text-white mb-4">MẠNG LƯỚI ĐỐI TÁC</h1>
-                    <p class="text-body-lg font-body-lg text-white/80 max-w-2xl mx-auto">Chúng tôi tự hào đồng hành cùng những thương hiệu hàng đầu thế giới, kiến tạo những trải nghiệm truyền thông và sự kiện đẳng cấp vượt trội.</p>
+                    <h1 class="font-display text-display-lg text-white mb-4">MẠNG LƯỚI ĐỐI TÁC</h1>
+                    <p class="font-body text-body-lg text-white/80 max-w-2xl mx-auto">Chúng tôi tự hào đồng hành cùng những thương hiệu hàng đầu thế giới, kiến tạo những trải nghiệm truyền thông và sự kiện đẳng cấp vượt trội.</p>
                 </div>
             </section>
 
-            <!-- Stats Section -->
-            <section class="max-w-[1280px] mx-auto px-8 py-16">
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    <div class="glass-card p-8 rounded-lg text-center">
-                        <div class="text-headline-lg font-headline-lg text-secondary mb-2">500+</div>
-                        <div class="font-label-caps text-on-surface-variant">Dự án thành công</div>
-                    </div>
-                    <div class="glass-card p-8 rounded-lg text-center">
-                        <div class="text-headline-lg font-headline-lg text-secondary mb-2">120+</div>
-                        <div class="font-label-caps text-on-surface-variant">Đối tác chiến lược</div>
-                    </div>
-                    <div class="glass-card p-8 rounded-lg text-center">
-                        <div class="text-headline-lg font-headline-lg text-secondary mb-2">15+</div>
-                        <div class="font-label-caps text-on-surface-variant">Giải thưởng quốc tế</div>
-                    </div>
-                    <div class="glass-card p-8 rounded-lg text-center">
-                        <div class="text-headline-lg font-headline-lg text-secondary mb-2">24/7</div>
-                        <div class="font-label-caps text-on-surface-variant">Hỗ trợ chuyên nghiệp</div>
+            <!-- Partner Carousel Section -->
+            <section class="w-full py-section-padding overflow-hidden">
+                <div class="max-w-[1280px] mx-auto px-8">
+                    <div class="swiper partnerSwiper">
+                        <div class="swiper-wrapper">
+
+                            <!-- Slide 1 -->
+                            <div id="500bros" class="swiper-slide">
+                                <div class="flex min-h-[360px] flex-col items-center justify-center text-center">
+                                    <img class="w-[90px] mb-4" src="assets/img/logo/500bros.png" alt="500 Bros" />
+                                    <p class="text-body-md text-white max-w-2xl mx-auto">500Bros là một công ty hoạt động trong lĩnh vực thể thao điện tử và truyền thông tại Việt Nam. Doanh nghiệp này tập trung vào việc xây dựng và phát triển hệ sinh thái esports, bao gồm sản xuất nội dung, tổ chức giải đấu và quản lý đội tuyển chuyên nghiệp. Với định hướng phát triển cộng đồng game và esports, 500Bros đã tạo dựng được dấu ấn trong việc kết nối người chơi, khán giả và các thương hiệu. Nhờ sự kết hợp giữa kinh nghiệm tổ chức, sáng tạo nội dung và hiểu biết thị trường, công ty ngày càng khẳng định vai trò của mình trong ngành công nghiệp giải trí số.</p>
+                                </div>
+                            </div>
+    
+                            <!-- Slide 2 -->
+                            <div id="asus" class="swiper-slide">
+                                <div class="flex min-h-[360px] flex-col items-center justify-center text-center">
+                                    <img class="w-[200px] invert mb-4" src="assets/img/logo/asus.png" alt="ASUS" />
+                                    <p class="text-body-md text-on-surface-variant mb-6 max-w-2xl mx-auto">ASUS là một tập đoàn công nghệ đến từ Đài Loan, hoạt động trong lĩnh vực sản xuất phần cứng máy tính và thiết bị điện tử. Hãng nổi tiếng với việc cung cấp các sản phẩm có hiệu năng ổn định, thiết kế hiện đại và phù hợp với nhiều nhóm người dùng, từ phổ thông đến chuyên nghiệp.</p>
+                                </div>
+                            </div>
+    
+                            <!-- Slide 3 -->
+                            <div id="vng" class="swiper-slide">
+                                <div class="flex min-h-[360px] flex-col items-center justify-center text-center">
+                                    <img class="w-[150px] mb-4" src="assets/img/logo/vng.png" alt="VNG" />
+                                    <p class="text-body-md text-on-surface-variant mb-6 max-w-2xl mx-auto">VNG Corporation là một công ty công nghệ hàng đầu tại Việt Nam, hoạt động trong lĩnh vực internet và dịch vụ số. Doanh nghiệp này tập trung phát triển các sản phẩm phục vụ nhu cầu giải trí, kết nối và tiện ích trực tuyến cho người dùng. Qua quá trình phát triển, VNG đã xây dựng hệ sinh thái đa dạng bao gồm trò chơi trực tuyến, nền tảng nhắn tin, thanh toán điện tử và các dịch vụ đám mây. Với định hướng đổi mới và sáng tạo, công ty không chỉ có ảnh hưởng lớn trong thị trường nội địa mà còn từng bước mở rộng ra quốc tế, khẳng định vị thế trong ngành công nghệ số.</p>
+                                </div>
+                            </div>
+    
+                            <!-- Slide 4 -->
+                            <div id="fpt" class="swiper-slide">
+                                <div class="flex min-h-[360px] flex-col items-center justify-center text-center">
+                                    <img class="w-[200px]" src="assets/img/logo/fpt.png" alt="FPT" />
+                                    <p class="text-body-md text-on-surface-variant mb-6 max-w-2xl mx-auto">FPT là một tập đoàn công nghệ hàng đầu tại Việt Nam, hoạt động chủ yếu trong các lĩnh vực công nghệ thông tin, viễn thông và giáo dục. Với quá trình phát triển lâu dài, FPT đã xây dựng được hệ sinh thái dịch vụ đa dạng, phục vụ cả thị trường trong nước và quốc tế.Doanh nghiệp này được biết đến với vai trò tiên phong trong chuyển đổi số, cung cấp các giải pháp công nghệ, phần mềm và hạ tầng mạng. Nhờ sự kết hợp giữa năng lực kỹ thuật, kinh nghiệm triển khai và định hướng đổi mới, FPT ngày càng khẳng định vị thế của mình trong ngành công nghệ khu vực và toàn cầu.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Pagination -->
+                        <div class="swiper-pagination mt-8"></div>
+    
+                        <!-- Navigation -->
+                        <button class="swiper-button-prev"></button>
+                        <button class="swiper-button-next"></button>
                     </div>
                 </div>
             </section>
 
             <!-- Main Logo Grid -->
-            <section class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_2fr] px-8 py-16 gap-12">
-                <div class="mb-16">
-                    <h2 class="text-display-lg text-white mb-4">
-                        Đối Tác <br />
-                        Chiến Lược
-                    </h2>
-                    <div class="w-full h-1 bg-secondary rounded-full"></div>
-                    <p class="text-white/60 mt-4 mb-8">Liên hệ với chúng tôi để biết thêm thông tin về cơ hội hợp tác.</p>
-                    <div class="flex justify-center items-center">
-                        <a href="lien-he.html#contact" class="inline-block bg-white text-black px-8 py-4 rounded-full hover:scale-105 transition-transform justify-content items-center">LIÊN HỆ NGAY</a>
+            <section class="w-full bg-surface-container-lowest py-section-padding">
+                <div class="max-w-[1280px] mx-auto px-8 grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-12">
+                    <div>
+                        <h2 class="text-display-md text-white mb-4">
+                            Đối Tác <br />
+                            Chiến Lược
+                        </h2>
+                        <div class="w-full h-1 bg-secondary rounded-full"></div>
+                        <p class="font-body text-white mt-8 mb-8">Liên hệ ngay để khám phá cơ hội hợp tác — cùng kiến tạo những trải nghiệm truyền thông và sự kiện đẳng cấp.</p>
+                        <div class="flex justify-center items-center">
+                            <a class="inline-block bg-white text-black px-8 py-4 rounded-full hover:scale-105 transition-transform" href="lien-he.html#contact">LIÊN HỆ NGAY</a>
+                        </div>
                     </div>
-                </div>
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 group-card">
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 group-card">
                     <!-- Branding Grid - Simulating high-end brand logos -->
-                    <div class="logo-item aspect-[5/3] w-full flex items-center justify-center p-8 group">
-                        <img src="assets/img/logo/500bros.png" alt="ASUS" />
-                    </div>
-                    <div class="logo-item aspect-[5/3] w-full flex items-center justify-center p-8 group">
-                        <img class="invert" src="assets/img/logo/asus.png" alt="FPT" />
-                    </div>
-                    <div class="logo-item aspect-[5/3] w-full flex items-center justify-center p-10 group">
+                    <a href="#500bros" class="logo-item aspect-[5/3] w-full flex items-center justify-center p-8 group">
+                        <img src="assets/img/logo/500bros.png" alt="500 Bros" />
+                    </a>
+                    <a href="#asus" class="logo-item aspect-[5/3] w-full flex items-center justify-center p-8 group">
+                        <img class="invert" src="assets/img/logo/asus.png" alt="ASUS" />
+                    </a>
+                    <a href="#vng" class="logo-item aspect-[5/3] w-full flex items-center justify-center p-10 group">
                         <img src="assets/img/logo/vng.png" alt="VNG" />
-                    </div>
-                    <div class="logo-item aspect-[5/3] w-full flex items-center justify-center p-4 group">
+                    </a>
+                    <a href="#fpt" class="logo-item aspect-[5/3] w-full flex items-center justify-center p-4 group">
                         <img src="assets/img/logo/fpt.png" alt="FPT" />
-                    </div>
+                    </a>
                 </div>
             </section>
         </main>
@@ -119,5 +148,9 @@
                 </div>
             </div>
         </footer>
+
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/doi-tac.js"></script>
+        <script src="assets/js/site.js"></script>
     </body>
 </html>

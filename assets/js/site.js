@@ -26,9 +26,13 @@
         window.addEventListener("scroll", sync, { passive: true });
     }
 
-    if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", initHeaderEffects, { once: true });
-    } else {
+    function init() {
         initHeaderEffects();
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", init, { once: true });
+    } else {
+        init();
     }
 })();

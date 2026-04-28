@@ -30,3 +30,51 @@ body {
     opacity: 1;
     border-color: #b8c3ff;
 }
+
+/* Swiper Custom Styling */
+.partnerSwiper {
+    padding: 40px 0;
+}
+
+.partnerSwiper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partnerSwiper .swiper-slide > div {
+    width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    --swiper-navigation-size: 35px;
+    --swiper-navigation-color: rgba(255, 255, 255, 0.72);
+    width: var(--swiper-navigation-size);
+    height: var(--swiper-navigation-size);
+    background: transparent;
+    transition:
+        color 0.35s ease,
+        transform 0.35s ease,
+        opacity 0.35s ease;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    --swiper-navigation-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgba(184, 195, 255, 1);
+    transform: scale(1.3);
+}
