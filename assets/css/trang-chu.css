@@ -42,3 +42,8 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+/* Icon rotation for services dropdown */
+[data-mobile-services][open] [data-mobile-services-icon] {
+    transform: rotate(180deg);
+}

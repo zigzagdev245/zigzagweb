@@ -85,20 +85,26 @@ tailwind.config = {
                 "section-padding": "120px",
             },
             fontFamily: {
+                display: ["Epilogue"],
                 epilogue: ["Epilogue"],
                 headline: ["Epilogue"],
-                display: ["Epilogue"],
                 body: ["Inter"],
                 label: ["Inter"],
             },
             fontSize: {
-                "headline-lg": ["48px", { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "600" }],
-                "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "600" }],
-                "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
-                "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
-                "display-lg": ["72px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
-                "display-md": ["48px", { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "700" }],
-                "label-caps": ["12px", { lineHeight: "1.0", letterSpacing: "0.1em", fontWeight: "600" }],
+                "display-lg": ["clamp(40px, 4vw + 1rem, 72px)", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+                "display-md": ["clamp(32px, 3vw + 1rem, 48px)", { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "700" }],
+                "display-sm": ["clamp(28px, 2vw + 1rem, 36px)", { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "700" }], // MỚI: Dùng cho tiêu đề trang ở các trang con
+
+                "headline-lg": ["clamp(28px, 2vw + 1rem, 40px)", { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "600" }],
+                "headline-md": ["clamp(24px, 1.5vw + 1rem, 32px)", { lineHeight: "1.3", fontWeight: "600" }],
+                "headline-sm": ["clamp(20px, 1vw + 1rem, 24px)", { lineHeight: "1.4", fontWeight: "600" }], // MỚI: Dùng cho tiêu đề phụ (H3, H4), tiêu đề widget ở sidebar
+
+                "body-lg": ["clamp(16px, 1vw + 0.75rem, 18px)", { lineHeight: "1.6", fontWeight: "400" }],
+                "body-md": ["clamp(14px, 0.5vw + 0.75rem, 16px)", { lineHeight: "1.6", fontWeight: "400" }],
+                "body-sm": ["clamp(12px, 0.3vw + 0.75rem, 14px)", { lineHeight: "1.5", fontWeight: "400" }], // MỚI: Dùng cho menu phụ, footer, ngày tháng bài viết
+
+                "label-caps": ["12px", { lineHeight: "1.0", letterSpacing: "0.1em", fontWeight: "600", textTransform: "uppercase" }], // Có thể thêm textTransform uppercase ở CSS class hoặc cấu hình thêm nếu muốn
             },
         },
     },

@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-        <title>Dịch vụ | Zigzag Media</title>
+        <title>Dịch vụ | ZIGZAG MEDIA</title>
         <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
         <script src="assets/js/tailwind-config.js"></script>
         <script defer src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
@@ -15,18 +15,32 @@
     </head>
     <body class="font-body text-on-surface">
         <!-- TopAppBar -->
-        <header class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-0 border-b border-transparent transition-all duration-300" data-site-header>
-            <div class="flex justify-between items-center max-w-[1280px] mx-auto px-8 py-6">
-                <div class="text-2xl font-black text-white tracking-tighter font-headline"><a href="trang-chu.html">ZIGZAG MEDIA</a></div>
-                <nav class="hidden md:flex items-center gap-10">
-                    <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-white/60 hover:text-white transition-colors" href="trang-chu.html">Trang chủ</a>
-                    <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-white/60 hover:text-white transition-colors" href="su-kien.html">Sự kiện</a>
-                    <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-blue-500 border-b-2 border-blue-500 pb-1" href="dich-vu.html">Dịch vụ</a>
-                    <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-white/60 hover:text-white transition-colors" href="doi-tac.html">Đối tác</a>
-                    <a class="font-epilogue text-[13px] font-semibold tracking-widest uppercase text-white/60 hover:text-white transition-colors" href="lien-he.html">Liên hệ</a>
-                </nav>
-                <div class="w-[157px]"></div>
-            </div>
+        <header class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-0 border-b border-transparent transition-all duration-300" data-site-header id="site-header">
+            <nav class="flex justify-between items-center max-w-[1280px] mx-auto px-8 py-6">
+                <div class="font-headline text-headline-sm font-black text-white tracking-tighter"><a href="trang-chu.html">ZIGZAG MEDIA</a></div>
+                <div class="hidden md:flex items-center gap-10">
+                    <a class="font-headline text-[13px] font-semibold tracking-widest text-white/60 hover:text-white" href="trang-chu.html">TRANG CHỦ</a>
+                    <a class="font-headline text-[13px] font-semibold tracking-widest text-white/60 hover:text-white" href="su-kien.html">SỰ KIỆN</a>
+                    <div class="relative group pb-1">
+                        <a class="font-headline text-[13px] font-semibold tracking-widest text-blue-500 border-b-2 border-blue-500 pb-1 inline-flex items-center gap-1" href="dich-vu.html" aria-haspopup="true"
+                            >DỊCH VỤ
+                            <span class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180">expand_more</span>
+                        </a>
+                        <div class="absolute left-1/2 top-full z-50 w-64 -translate-x-1/2 pt-2 opacity-0 invisible translate-y-1 pointer-events-none transition-all duration-200 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:pointer-events-auto group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:pointer-events-auto">
+                            <div class="overflow-hidden rounded-2xl border border-white/10 bg-[#09111e]/95 shadow-2xl backdrop-blur-xl">
+                                <a class="block px-5 py-4 text-[13px] font-semibold tracking-widest text-white/60 hover:text-white hover:bg-white/10" href="#">TỔ CHỨC SỰ KIỆN</a>
+                                <a class="block px-5 py-4 text-[13px] font-semibold tracking-widest text-white/60 hover:text-white hover:bg-white/10" href="#">CUNG CẤP NỘI DUNG</a>
+                                <a class="block px-5 py-4 text-[13px] font-semibold tracking-widest text-white/60 hover:text-white hover:bg-white/10" href="#">SẢN XUẤT NỘI DUNG</a>
+                                <a class="block px-5 py-4 text-[13px] font-semibold tracking-widest text-white/60 hover:text-white hover:bg-white/10" href="#">PHÁT SÓNG LIVESTREAM</a>
+                                <a class="block px-5 py-4 text-[13px] font-semibold tracking-widest text-white/60 hover:text-white hover:bg-white/10" href="#">NGƯỜI TRUYỀN CẢM HỨNG VÀ QUẢNG BÁ TRỰC TUYẾN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="font-headline text-[13px] font-semibold tracking-widest text-white/60 hover:text-white" href="doi-tac.html">ĐỐI TÁC</a>
+                    <a class="font-headline text-[13px] font-semibold tracking-widest text-white/60 hover:text-white" href="lien-he.html">LIÊN HỆ</a>
+                </div>
+                <div class="hidden md:block w-[157px]"></div>
+            </nav>
         </header>
 
         <main class="pt-32">
@@ -147,7 +161,7 @@
                         <span class="material-symbols-outlined text-lg">public</span>
                     </a>
                     <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all text-white/60 hover:text-white" href="lien-he.html#contact">
-                        <span class="material-symbols-outlined text-lg">mail</span>
+                        <span class="material-symbols-outlined text-lg">email</span>
                     </a>
                 </div>
             </div>
