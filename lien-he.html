@@ -31,7 +31,7 @@
             <!-- Hero Section -->
             <section class="max-w-[1280px] mx-auto px-8 mb-10">
                 <div class="flex flex-col gap-6 max-w-3xl">
-                    <span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em]">Connect with us</span>
+                    <span class="font-label text-label-caps text-secondary uppercase tracking-[0.2em]">Connect with us</span>
                     <h1 class="font-display text-display-lg text-white">LET'S CREATE <span class="text-secondary">IMPACT</span> TOGETHER.</h1>
                     <p id="contact" class="font-body text-body-lg text-on-surface-variant">Sẵn sàng nâng tầm sự kiện và chiến dịch truyền thông của bạn? Đội ngũ chuyên gia của chúng tôi luôn sẵn sàng lắng nghe và hiện thực hóa những ý tưởng táo bạo nhất.</p>
                 </div>
@@ -45,16 +45,16 @@
                     <form class="space-y-6" action="https://formspree.io/f/xnjlqeww" method="POST">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div class="space-y-2">
-                                <label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Họ và Tên</label>
+                                <label class="font-label text-label-caps text-on-surface-variant uppercase">Họ và Tên</label>
                                 <input type="text" name="name" id="name" class="w-full bg-[#1a1a1a] border-white/10 rounded-md text-white px-4 py-3 focus:border-secondary focus:ring-0 transition-colors" placeholder="Nguyễn Văn A" required />
                             </div>
                             <div class="space-y-2">
-                                <label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Email</label>
+                                <label class="font-label text-label-caps text-on-surface-variant uppercase">Email</label>
                                 <input type="email" name="email" id="email" class="w-full bg-[#1a1a1a] border-white/10 rounded-md text-white px-4 py-3 focus:border-secondary focus:ring-0 transition-colors" placeholder="name@company.com" required />
                             </div>
                         </div>
                         <div class="space-y-2">
-                            <label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Dịch vụ quan tâm</label>
+                            <label class="font-label text-label-caps text-on-surface-variant uppercase">Dịch vụ quan tâm</label>
                             <select name="subject" id="subject" class="w-full bg-[#1a1a1a] border-white/10 rounded-md text-white px-4 py-3 focus:border-secondary focus:ring-0 transition-colors" required>
                                 <option value="" selected hidden>-- Chọn dịch vụ --</option>
                                 <option value="Digital Marketing">Digital Marketing</option>
@@ -67,7 +67,7 @@
                             </select>
                         </div>
                         <div class="space-y-2">
-                            <label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Nội dung yêu cầu</label>
+                            <label class="font-label text-label-caps text-on-surface-variant uppercase">Nội dung yêu cầu</label>
                             <textarea name="message" id="message" class="w-full bg-[#1a1a1a] border-white/10 rounded-md text-white px-4 py-3 focus:border-secondary focus:ring-0 transition-colors" placeholder="Mô tả ngắn về ý tưởng hoặc yêu cầu của bạn..." rows="5" required></textarea>
                         </div>
                         <input class="hidden" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
@@ -83,7 +83,7 @@
                                 <span class="material-symbols-outlined" data-icon="location_on">location_on</span>
                             </div>
                             <div>
-                                <p class="font-label-caps text-label-caps text-secondary mb-1">Văn phòng đại diện</p>
+                                <p class="font-label text-label-caps text-secondary mb-1">Văn phòng đại diện</p>
                                 <p class="text-white font-medium">R4, 72A Đ. Nguyễn Trãi, Thượng Đình,</p>
                                 <p class="text-white font-medium">Thanh Xuân, Hà Nội, Việt Nam</p>
                             </div>
@@ -93,14 +93,14 @@
                                 <span class="material-symbols-outlined" data-icon="mail">mail</span>
                             </div>
                             <div>
-                                <p class="font-label-caps text-label-caps text-secondary mb-1">Email liên hệ</p>
+                                <p class="font-label text-label-caps text-secondary mb-1">Email liên hệ</p>
                                 <p class="text-white font-medium">hi@zigzag.icu</p>
                             </div>
                         </div>
                     </div>
                     <!-- Social Links -->
                     <div class="glass-panel p-8 rounded-lg">
-                        <p class="font-label-caps text-label-caps text-on-surface-variant mb-6 uppercase">Theo dõi chúng tôi</p>
+                        <p class="font-label text-label-caps text-on-surface-variant mb-6 uppercase">Theo dõi chúng tôi</p>
                         <div class="flex gap-4">
                             <a class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center border border-white/5 hover:border-secondary/50 hover:bg-secondary/10 transition-all" href="#" aria-label="Facebook">
                                 <img class="w-6 h-6 invert" src="assets/img/svg/fb.svg" alt="Facebook" />
@@ -148,6 +148,7 @@
             </div>
         </footer>
 
+        <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
         <script src="assets/js/site.js"></script>
     </body>
 </html>

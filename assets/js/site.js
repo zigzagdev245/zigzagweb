@@ -1,5 +1,6 @@
 (function () {
     var SCROLL_TOP_THRESHOLD = 4;
+    var lenis = null;
 
     // Header trong suốt khi ở top, và có nền + blur khi scroll xuống
     function applyHeaderState(headerEl) {
@@ -26,6 +27,33 @@
         window.addEventListener("scroll", sync, { passive: true });
     }
 
+    function initLenis() {
+        if (typeof window.Lenis !== "function") {
+            console.warn("Lenis is not loaded. Smooth scrolling features are disabled.");
+            return null;
+        }
+
+        lenis = new window.Lenis({
+            duration: 1.1,
+            smoothWheel: true,
+            smoothTouch: false,
+            easing: function (t) {
+                return t >= 1 ? 1 : 1 - Math.pow(2, -10 * t);
+            },
+        });
+
+        // Make lenis globally accessible
+        window.lenis = lenis;
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+        return lenis;
+    }
+
     const btn = document.getElementById("backToTop");
 
     if (btn) {
@@ -45,32 +73,15 @@
         window.addEventListener("scroll", onScrollBtn, { passive: true });
         onScrollBtn();
 
-        function easeInOutCubic(t) {
-            return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-        }
-
-        function scrollToTopAnimated(duration) {
-            var start = window.scrollY;
-            var startTime = performance.now();
-
-            function step(now) {
-                var elapsed = now - startTime;
-                var t = Math.min(1, elapsed / duration);
-                var eased = easeInOutCubic(t);
-                window.scrollTo(0, Math.floor(start * (1 - eased)));
-                if (t < 1) requestAnimationFrame(step);
-            }
-
-            requestAnimationFrame(step);
-        }
-
         btn.addEventListener("click", function (e) {
             e.preventDefault();
-            scrollToTopAnimated(450);
+            if (!lenis) return;
+            lenis.scrollTo(0, { duration: 0.6 });
         });
     }
 
     function init() {
+        initLenis();
         initHeaderEffects();
     }
 
@@ -79,4 +90,31 @@
     } else {
         init();
     }
+
+    document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener("click", function (e) {
+            var href = this.getAttribute("href");
+            if (!href || href === "#") return;
+
+            var targetId = href.substring(1);
+            var target = document.getElementById(targetId);
+            if (!target) return;
+
+            if (!lenis) return;
+
+            e.preventDefault();
+
+            var headerEl = document.querySelector("[data-site-header]");
+            var headerOffset = headerEl ? headerEl.offsetHeight : 0;
+
+            lenis.scrollTo(target, {
+                offset: -(headerOffset + 8),
+                duration: 1,
+            });
+
+            if (history.pushState) {
+                history.pushState(null, "", href);
+            }
+        });
+    });
 })();

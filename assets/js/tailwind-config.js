@@ -86,12 +86,6 @@ tailwind.config = {
             },
             fontFamily: {
                 epilogue: ["Epilogue"],
-                "headline-lg": ["Epilogue"],
-                "headline-md": ["Epilogue"],
-                "body-md": ["Inter"],
-                "display-xl": ["Epilogue"],
-                "body-lg": ["Inter"],
-                "label-caps": ["Inter"],
                 headline: ["Epilogue"],
                 display: ["Epilogue"],
                 body: ["Inter"],
