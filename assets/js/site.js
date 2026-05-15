@@ -117,4 +117,43 @@
             }
         });
     });
+
+    // Mobile menu toggle
+    var mobileBtn = document.getElementById("mobileMenuBtn");
+    var mobileMenu = document.getElementById("mobileMenu");
+    var mobileClose = document.getElementById("mobileMenuClose");
+
+    function openMobileMenu() {
+        if (!mobileMenu) return;
+        mobileMenu.classList.remove("hidden");
+        document.body.classList.add("overflow-hidden");
+        if (mobileBtn) mobileBtn.setAttribute("aria-expanded", "true");
+    }
+
+    function closeMobileMenu() {
+        if (!mobileMenu) return;
+        mobileMenu.classList.add("hidden");
+        document.body.classList.remove("overflow-hidden");
+        if (mobileBtn) mobileBtn.setAttribute("aria-expanded", "false");
+    }
+
+    if (mobileBtn) {
+        mobileBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            openMobileMenu();
+        });
+    }
+
+    if (mobileClose) {
+        mobileClose.addEventListener("click", function (e) {
+            e.preventDefault();
+            closeMobileMenu();
+        });
+    }
+
+    if (mobileMenu) {
+        mobileMenu.addEventListener("click", function (e) {
+            if (e.target === mobileMenu) closeMobileMenu();
+        });
+    }
 })();
