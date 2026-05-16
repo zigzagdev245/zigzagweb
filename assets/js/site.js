@@ -83,6 +83,7 @@
     function init() {
         initLenis();
         initHeaderEffects();
+        initMobileMenu();
     }
 
     if (document.readyState === "loading") {
@@ -118,42 +119,48 @@
         });
     });
 
-    // Mobile menu toggle
-    var mobileBtn = document.getElementById("mobileMenuBtn");
-    var mobileMenu = document.getElementById("mobileMenu");
-    var mobileClose = document.getElementById("mobileMenuClose");
+    // Mobile menu toggle (initialized after DOM is ready)
+    function initMobileMenu() {
+        var mobileBtn = document.getElementById("mobileMenuBtn");
+        var mobileMenu = document.getElementById("mobileMenu");
+        if (!mobileBtn || !mobileMenu) return;
 
-    function openMobileMenu() {
-        if (!mobileMenu) return;
-        mobileMenu.classList.remove("hidden");
-        document.body.classList.add("overflow-hidden");
-        if (mobileBtn) mobileBtn.setAttribute("aria-expanded", "true");
-    }
+        function openMobileMenu() {
+            mobileMenu.classList.remove("hidden");
+            mobileBtn.classList.add("menu-open");
+            document.body.classList.add("overflow-hidden");
+            mobileBtn.setAttribute("aria-expanded", "true");
+        }
 
-    function closeMobileMenu() {
-        if (!mobileMenu) return;
-        mobileMenu.classList.add("hidden");
-        document.body.classList.remove("overflow-hidden");
-        if (mobileBtn) mobileBtn.setAttribute("aria-expanded", "false");
-    }
+        function closeMobileMenu() {
+            mobileMenu.classList.add("hidden");
+            mobileBtn.classList.remove("menu-open");
+            document.body.classList.remove("overflow-hidden");
+            mobileBtn.setAttribute("aria-expanded", "false");
+        }
 
-    if (mobileBtn) {
         mobileBtn.addEventListener("click", function (e) {
             e.preventDefault();
-            openMobileMenu();
+            if (mobileBtn.classList.contains("menu-open")) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
         });
-    }
 
-    if (mobileClose) {
-        mobileClose.addEventListener("click", function (e) {
-            e.preventDefault();
-            closeMobileMenu();
+        mobileMenu.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", closeMobileMenu);
         });
-    }
 
-    if (mobileMenu) {
         mobileMenu.addEventListener("click", function (e) {
             if (e.target === mobileMenu) closeMobileMenu();
+        });
+
+        // Close menu on Escape key
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape" && !mobileMenu.classList.contains("hidden")) {
+                closeMobileMenu();
+            }
         });
     }
 })();

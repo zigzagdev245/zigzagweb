@@ -38,25 +38,24 @@
                     <a class="font-headline text-[13px] font-semibold tracking-widest text-white/60 hover:text-white" href="lien-he.html">LIÊN HỆ</a>
                 </div>
                 <div class="hidden md:block w-[157px]"></div>
-                <div class="md:hidden">
-                    <button id="mobileMenuBtn" class="w-10 h-10 flex items-center justify-center" aria-label="Open menu" aria-expanded="false">
-                        <img class="w-4 h-4" src="assets/img/svg/bars.svg" alt="MenuBars" />
-                    </button>
-                </div>
+                <button id="mobileMenuBtn" type="button" aria-controls="mobileMenu" aria-expanded="false" class="hamburger w-10 h-10 flex items-center justify-center md:hidden" aria-label="Open menu">
+                    <div class="lines">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </button>
             </nav>
         </header>
 
         <!-- Mobile menu (full-screen overlay) -->
-        <div id="mobileMenu" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden">
-            <button id="mobileMenuClose" class="absolute top-6 right-6 inline-flex items-center justify-center w-10 h-10" aria-label="Close menu">
-                <img class="w-4 h-4" src="assets/img/svg/x.svg" alt="Close" />
-            </button>
+        <div id="mobileMenu" class="hidden fixed inset-0 z-40 bg-black/80 backdrop-blur-sm">
             <nav class="h-full flex flex-col items-center justify-center gap-8 px-6">
-                <a href="trang-chu.html" class="font-headline text-[20px] font-bold text-blue-500 tracking-wide">TRANG CHỦ</a>
-                <a href="su-kien.html" class="font-headline text-[20px] font-bold text-white tracking-wide">SỰ KIỆN</a>
-                <a href="dich-vu.html" class="font-headline text-[20px] font-bold text-white tracking-wide">DỊCH VỤ</a>
-                <a href="doi-tac.html" class="font-headline text-[20px] font-bold text-white tracking-wide">ĐỐI TÁC</a>
-                <a href="lien-he.html" class="font-headline text-[20px] font-bold text-white tracking-wide">LIÊN HỆ</a>
+                <a href="trang-chu.html" class="font-headline text-[20px] font-bold text-blue-500 border-b-2 border-blue-500 pb-1 tracking-wide hover:text-blue-500 hover:scale-110 transition-all duration-200">TRANG CHỦ</a>
+                <a href="su-kien.html" class="font-headline text-[20px] font-bold text-white/60 tracking-wide hover:text-white hover:scale-110 transition-all duration-200">SỰ KIỆN</a>
+                <a href="dich-vu.html" class="font-headline text-[20px] font-bold text-white/60 tracking-wide hover:text-white hover:scale-110 transition-all duration-200">DỊCH VỤ</a>
+                <a href="doi-tac.html" class="font-headline text-[20px] font-bold text-white/60 tracking-wide hover:text-white hover:scale-110 transition-all duration-200">ĐỐI TÁC</a>
+                <a href="lien-he.html" class="font-headline text-[20px] font-bold text-white/60 tracking-wide hover:text-white hover:scale-110 transition-all duration-200">LIÊN HỆ</a>
             </nav>
         </div>
 

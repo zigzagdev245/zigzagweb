@@ -7,8 +7,6 @@
         <title>Sự kiện | ZIGZAG MEDIA</title>
         <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
         <script src="assets/js/tailwind-config.js"></script>
-        <script defer src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
-        <script defer src="assets/js/site.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
         <link href="assets/css/su-kien.css" rel="stylesheet" />
@@ -22,17 +20,17 @@
                     <a class="font-headline text-[13px] font-semibold tracking-widest text-white/60 hover:text-white" href="trang-chu.html">TRANG CHỦ</a>
                     <a class="font-headline text-[13px] font-semibold tracking-widest text-blue-500 border-b-2 border-blue-500 pb-1" href="su-kien.html">SỰ KIỆN</a>
                     <div class="relative group pb-1">
-                        <a class="font-headline text-[13px] font-semibold tracking-widest text-white/60 hover:text-white transition-colors inline-flex items-center gap-1" href="dich-vu.html" aria-haspopup="true"
-                            >DỊCH VỤ
+                        <a class="font-headline text-[13px] font-semibold tracking-widest text-white/60 hover:text-white transition-colors inline-flex items-center gap-1" href="dich-vu.html" aria-haspopup="true">
+                            DỊCH VỤ
                             <span class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180">expand_more</span>
                         </a>
                         <div class="absolute left-1/2 top-full z-50 w-64 -translate-x-1/2 pt-2 opacity-0 invisible translate-y-1 pointer-events-none transition-all duration-200 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:pointer-events-auto group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:pointer-events-auto">
-                            <div class="overflow-hidden rounded-2xl border border-white/10 bg-[#09111e]/95 shadow-2xl backdrop-blur-xl">
-                                <a class="block px-5 py-4 text-[13px] font-semibold tracking-widest text-white/60 hover:text-white hover:bg-white/10" href="#">TỔ CHỨC SỰ KIỆN</a>
-                                <a class="block px-5 py-4 text-[13px] font-semibold tracking-widest text-white/60 hover:text-white hover:bg-white/10" href="#">CUNG CẤP NỘI DUNG</a>
-                                <a class="block px-5 py-4 text-[13px] font-semibold tracking-widest text-white/60 hover:text-white hover:bg-white/10" href="#">SẢN XUẤT NỘI DUNG</a>
-                                <a class="block px-5 py-4 text-[13px] font-semibold tracking-widest text-white/60 hover:text-white hover:bg-white/10" href="#">PHÁT SÓNG LIVESTREAM</a>
-                                <a class="block px-5 py-4 text-[13px] font-semibold tracking-widest text-white/60 hover:text-white hover:bg-white/10" href="#">NGƯỜI TRUYỀN CẢM HỨNG VÀ QUẢNG BÁ TRỰC TUYẾN</a>
+                            <div class="overflow-hidden rounded border border-white/10 bg-[#09111e]/95 shadow-2xl backdrop-blur-xl">
+                                <a class="block px-4 py-4 text-[13px] font-semibold text-white/60 tracking-widest hover:text-white hover:bg-white/10" href="#">TỔ CHỨC SỰ KIỆN</a>
+                                <a class="block px-4 py-4 text-[13px] font-semibold text-white/60 tracking-widest hover:text-white hover:bg-white/10" href="#">CUNG CẤP NỘI DUNG</a>
+                                <a class="block px-4 py-4 text-[13px] font-semibold text-white/60 tracking-widest hover:text-white hover:bg-white/10" href="#">SẢN XUẤT NỘI DUNG</a>
+                                <a class="block px-4 py-4 text-[13px] font-semibold text-white/60 tracking-widest hover:text-white hover:bg-white/10" href="#">PHÁT SÓNG LIVESTREAM</a>
+                                <a class="block px-4 py-4 text-[13px] font-semibold text-white/60 tracking-widest hover:text-white hover:bg-white/10" href="#">NGƯỜI TRUYỀN CẢM HỨNG VÀ QUẢNG BÁ TRỰC TUYẾN</a>
                             </div>
                         </div>
                     </div>
@@ -40,25 +38,24 @@
                     <a class="font-headline text-[13px] font-semibold tracking-widest text-white/60 hover:text-white" href="lien-he.html">LIÊN HỆ</a>
                 </div>
                 <div class="hidden md:block w-[157px]"></div>
-                <div class="md:hidden">
-                    <button id="mobileMenuBtn" class="w-10 h-10 flex items-center justify-center" aria-label="Open menu" aria-expanded="false">
-                        <img class="w-4 h-4" src="assets/img/svg/bars.svg" alt="MenuBars" />
-                    </button>
-                </div>
+                <button id="mobileMenuBtn" type="button" aria-controls="mobileMenu" aria-expanded="false" class="hamburger w-10 h-10 flex items-center justify-center md:hidden" aria-label="Open menu">
+                    <div class="lines">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </button>
             </nav>
         </header>
 
         <!-- Mobile menu (full-screen overlay) -->
-        <div id="mobileMenu" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden">
-            <button id="mobileMenuClose" class="absolute top-6 right-6 inline-flex items-center justify-center w-10 h-10" aria-label="Close menu">
-                <img class="w-4 h-4" src="assets/img/svg/x.svg" alt="Close" />
-            </button>
+        <div id="mobileMenu" class="hidden fixed inset-0 z-40 bg-black/80 backdrop-blur-sm">
             <nav class="h-full flex flex-col items-center justify-center gap-8 px-6">
-                <a href="trang-chu.html" class="font-headline text-[20px] font-bold text-white tracking-wide">TRANG CHỦ</a>
-                <a href="su-kien.html" class="font-headline text-[20px] font-bold text-blue-500 tracking-wide">SỰ KIỆN</a>
-                <a href="dich-vu.html" class="font-headline text-[20px] font-bold text-white tracking-wide">DỊCH VỤ</a>
-                <a href="doi-tac.html" class="font-headline text-[20px] font-bold text-white tracking-wide">ĐỐI TÁC</a>
-                <a href="lien-he.html" class="font-headline text-[20px] font-bold text-white tracking-wide">LIÊN HỆ</a>
+                <a href="trang-chu.html" class="font-headline text-[20px] font-bold text-white/60 tracking-wide hover:text-white hover:scale-110 transition-all duration-200">TRANG CHỦ</a>
+                <a href="su-kien.html" class="font-headline text-[20px] font-bold text-blue-500 border-b-2 border-blue-500 pb-1 tracking-wide hover:text-blue-500 hover:scale-110 transition-all duration-200">SỰ KIỆN</a>
+                <a href="dich-vu.html" class="font-headline text-[20px] font-bold text-white/60 tracking-wide hover:text-white hover:scale-110 transition-all duration-200">DỊCH VỤ</a>
+                <a href="doi-tac.html" class="font-headline text-[20px] font-bold text-white/60 tracking-wide hover:text-white hover:scale-110 transition-all duration-200">ĐỐI TÁC</a>
+                <a href="lien-he.html" class="font-headline text-[20px] font-bold text-white/60 tracking-wide hover:text-white hover:scale-110 transition-all duration-200">LIÊN HỆ</a>
             </nav>
         </div>
 
