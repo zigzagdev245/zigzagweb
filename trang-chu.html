@@ -7,6 +7,8 @@
         <title>Trang chủ | ZIGZAG MEDIA</title>
         <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
         <script src="assets/js/tailwind-config.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.5.2/dist/css/glide.core.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.5.2/dist/css/glide.theme.min.css" />
         <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
         <link href="assets/css/trang-chu.css" rel="stylesheet" />
@@ -63,7 +65,7 @@
             <!-- Hero Section -->
             <section class="relative h-screen flex items-center justify-center overflow-hidden">
                 <div class="absolute inset-0 z-0">
-                    <img alt="Cinematic production background" class="w-full h-full object-cover brightness-50" data-alt="Cinematic wide shot of a high-tech esports arena with dramatic blue and purple stage lighting and large digital screens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0ZOieK8mA3ekIAlmAcF4Ap5a1GRHNY_1TFcLeWSsKxK4aZbcajc50uTPlLZGimBVJ3L9sPmmQgs6iIxO2ldosi4eIAH2sH5ZU82Uxclpapo_UBM39SiPCWH7f2NKXcOLp9NnSJ2zwgH5A-5jzlU3E4GspLTr4KCm6dLxIhGhw8BbCz0Yzpf8NbkNz8VU1dEwBJW30Y72rTUWaoTNboUzBYD1XD2iLwEdyHw9hCK3xss9B7oRPMHFMXTzbHdRfx34KqEFoHgPeHPk" />
+                    <img alt="Cinematic production background" class="w-full h-full object-cover brightness-50 opacity-50" data-alt="Cinematic wide shot of a high-tech esports arena with dramatic blue and purple stage lighting and large digital screens" src="assets/img/screen/The_International_2014.jpg" />
                     <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
                     <div class="absolute inset-0 hero-gradient"></div>
                 </div>
@@ -71,8 +73,8 @@
                     <h1 class="text-display-lg font-display text-white mb-6">ĐỈNH CAO <br /><span class="text-secondary">TRUYỀN THÔNG</span> SỐ</h1>
                     <p class="font-body text-body-lg text-white/80 mx-auto mb-10">Chào mừng bạn đến với ZigZag Media! Chúng tôi là một tập thể trẻ, sáng tạo và luôn khao khát tìm kiếm những hướng đi mới trong bản đồ truyền thông hiện đại.</p>
                     <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                        <a href="#about" class="border border-white/100 text-white px-10 py-5 rounded-full font-label text-label-caps hover:bg-white/10 transition-all">VỀ CHÚNG TÔI</a>
-                        <a href="#service" class="bg-secondary-container text-white px-10 py-5 rounded-full font-label text-label-caps hover:brightness-110 transition-all">KHÁM PHÁ DỰ ÁN</a>
+                        <a href="#about" class="border border-white/100 text-white px-10 py-5 font-label text-label-caps hover:bg-white/10 transition-all">VỀ CHÚNG TÔI</a>
+                        <a href="#service" class="bg-secondary-container text-white px-10 py-5 font-label text-label-caps hover:brightness-110 transition-all">KHÁM PHÁ DỰ ÁN</a>
                     </div>
                 </div>
                 <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/30 animate-bounce">
@@ -131,25 +133,26 @@
                             <div class="timeline-item flex flex-col items-center text-center group">
                                 <div class="mb-6 md:mb-10 order-2 md:order-1">
                                     <h4 class="text-headline-md font-headline text-secondary mb-2">2025</h4>
-                                    <p class="text-white font-medium">Khởi đầu hành trình ZIGZAG</p>
+                                    <p class="text-on-surface-variant font-medium group-hover:text-white">Khởi đầu hành trình ZIGZAG</p>
                                 </div>
                                 <div class="relative z-20 order-1 md:order-2">
                                     <div class="timeline-dot w-6 h-6 rounded-full bg-background border-4 border-secondary shadow-[0_0_15px_rgba(184,195,255,0.5)] group-hover:scale-125 transition-transform duration-300"></div>
                                 </div>
                                 <div class="mt-6 md:mt-10 order-3">
-                                    <p class="text-body-md text-on-surface-variant max-w-[260px]">Zigzag thành lập với tên gọi ZigZag Media, và có 10 thành viên.</p>
+                                    <p class="text-body-md text-on-surface-variant max-w-[260px] group-hover:text-white">Zigzag thành lập với tên gọi ZigZag Media, và có 10 thành viên.</p>
                                 </div>
                             </div>
                             <div class="timeline-item flex flex-col items-center text-center group">
                                 <div class="mb-6 md:mb-10 order-2 md:order-1">
-                                    <h4 class="text-headline-md font-headline text-secondary mb-2">2026</h4>
-                                    <p class="text-white font-medium">Tăng tốc và mở rộng</p>
+                                    <h4 class="text-headline-md font-headline text-secondary mb-2 group-hover:scale-110">2026</h4>
+                                    <p class="text-on-surface-variant font-medium group-hover:text-white">Tăng tốc và mở rộng</p>
                                 </div>
+
                                 <div class="relative z-20 order-1 md:order-2">
                                     <div class="timeline-dot w-6 h-6 rounded-full bg-background border-4 border-secondary shadow-[0_0_15px_rgba(184,195,255,0.5)] group-hover:scale-125 transition-transform duration-300"></div>
                                 </div>
                                 <div class="mt-6 md:mt-10 order-3">
-                                    <p class="text-body-md text-on-surface-variant max-w-[260px]">Bắt đầu tổ chức các sự kiện esport, quảng bá các nhãn hàng công nghệ.</p>
+                                    <p class="text-body-md text-on-surface-variant max-w-[260px] group-hover:text-white">Bắt đầu tổ chức các sự kiện esport, quảng bá các nhãn hàng công nghệ.</p>
                                 </div>
                             </div>
                         </div>
@@ -164,56 +167,86 @@
                         <span class="text-label-caps font-label text-secondary uppercase mb-4 block tracking-[0.2em]">Our Values</span>
                         <h2 class="text-headline-lg font-headline text-white">CHÚNG TÔI MANG LẠI</h2>
                     </div>
-                    <div class="relative group">
-                        <!-- Navigation Arrows -->
-                        <button class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 z-20 w-12 h-12 rounded-full glass-card flex items-center justify-center text-white hover:bg-secondary-container transition-all opacity-0 group-hover:opacity-100 hidden md:flex">
-                            <span class="material-symbols-outlined">chevron_left</span>
-                        </button>
-                        <button class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 z-20 w-12 h-12 rounded-full glass-card flex items-center justify-center text-white hover:bg-secondary-container transition-all opacity-0 group-hover:opacity-100 hidden md:flex">
-                            <span class="material-symbols-outlined">chevron_right</span>
-                        </button>
-                        <!-- Slider Container -->
-                        <div class="flex overflow-x-auto gap-8 no-scrollbar scroll-smooth pb-8 snap-x">
-                            <!-- Value Card 1 -->
-                            <div class="min-w-[320px] md:min-w-[400px] snap-center">
-                                <div class="glass-card p-10 rounded-lg h-full hover:border-secondary/50 transition-all border-l-4 border-l-secondary">
-                                    <div class="w-16 h-16 rounded-2xl bg-secondary-container/20 flex items-center justify-center mb-8">
-                                        <span class="material-symbols-outlined text-secondary text-3xl">auto_awesome</span>
-                                    </div>
-                                    <h3 class="text-headline-md font-headline text-white mb-4">Creative Excellence</h3>
-                                    <p class="text-on-surface-variant leading-relaxed">Đội ngũ sáng tạo luôn dẫn đầu xu hướng, tạo ra những sản phẩm hình ảnh và nội dung đột phá, đậm chất cinematic.</p>
-                                </div>
+                    <div class="relative">
+                        <div class="glide">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide">
+                                        <div class="min-w-[320px] md:min-w-[400px]">
+                                            <div class="glass-card p-6 h-[450px] flex flex-col hover:border-secondary/50 transition-all">
+                                                <img src="assets/img/dich-vu/to-chuc-su-kien.jpg" class="w-full h-[340px] md:h-[220px] object-cover mb-4" alt="Tổ chức sự kiện" />
+                                                <h3 class="text-headline-md font-headline text-white">Tổ chức sự kiện</h3>
+                                                <p class="text-on-surface-variant leading-relaxed">Cung cấp giải pháp tổ chức sự kiện esports, công nghệ và giải trí trọn gói, tạo trải nghiệm hiện đại và kết nối cộng đồng hiệu quả.</p>
+                                                <a href="dich-vu.html" class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-secondary hover:text-white transition-colors">
+                                                    Xem chi tiết
+                                                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <div class="min-w-[320px] md:min-w-[400px]">
+                                            <div class="glass-card p-6 h-[450px] flex flex-col hover:border-secondary/50 transition-all">
+                                                <img src="assets/img/dich-vu/cung-cap-noi-dung.jpg" class="w-full h-[340px] md:h-[220px] object-cover mb-4" alt="Cung cấp nội dung" />
+                                                <h3 class="text-headline-md font-headline text-white">Cung cấp nội dung</h3>
+                                                <p class="text-on-surface-variant leading-relaxed">Sản xuất VOD, video và media chất lượng cao, giúp thương hiệu tăng nhận diện và truyền tải thông điệp hiệu quả.</p>
+                                                <a href="dich-vu.html" class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-secondary hover:text-white transition-colors">
+                                                    Xem chi tiết
+                                                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <div class="min-w-[320px] md:min-w-[400px]">
+                                            <div class="glass-card p-6 h-[450px] flex flex-col hover:border-secondary/50 transition-all">
+                                                <img src="assets/img/dich-vu/san-xuat-noi-dung.jpg" class="w-full h-[340px] md:h-[220px] object-cover mb-4" alt="Sản xuất nội dung" />
+                                                <h3 class="text-headline-md font-headline text-white">Sản xuất nội dung</h3>
+                                                <p class="text-on-surface-variant leading-relaxed">Đầu tư thiết bị hiện đại và đội ngũ chuyên nghiệp để tạo ra nội dung số sáng tạo, đồng bộ trên nhiều nền tảng.</p>
+                                                <a href="dich-vu.html" class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-secondary hover:text-white transition-colors">
+                                                    Xem chi tiết
+                                                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <div class="min-w-[320px] md:min-w-[400px]">
+                                            <div class="glass-card p-6 h-[450px] flex flex-col hover:border-secondary/50 transition-all">
+                                                <img src="assets/img/dich-vu/phat-song-livestream.png" class="w-full h-[340px] md:h-[220px] object-cover mb-4" alt="Phát sóng livestream" />
+                                                <h3 class="text-headline-md font-headline text-white">Phát sóng livestream</h3>
+                                                <p class="text-on-surface-variant leading-relaxed">Hỗ trợ phát sóng trực tiếp chất lượng cao với hình ảnh, âm thanh và đường truyền ổn định.</p>
+                                                <a href="dich-vu.html" class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-secondary hover:text-white transition-colors">
+                                                    Xem chi tiết
+                                                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <div class="min-w-[320px] md:min-w-[400px]">
+                                            <div class="glass-card p-6 h-[450px] flex flex-col hover:border-secondary/50 transition-all">
+                                                <img src="assets/img/dich-vu/KOL.jpg" class="w-full h-[340px] md:h-[220px] object-cover mb-4" alt="Người truyền cảm hứng" />
+                                                <h3 class="text-headline-md font-headline text-white">Influencer</h3>
+                                                <p class="text-on-surface-variant leading-relaxed">Kết nối thương hiệu với KOL phù hợp để tăng độ nhận diện và hiệu quả quảng bá.</p>
+                                                <a href="dich-vu.html" class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-secondary hover:text-white transition-colors">
+                                                    Xem chi tiết
+                                                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                            <!-- Value Card 2 -->
-                            <div class="min-w-[320px] md:min-w-[400px] snap-center">
-                                <div class="glass-card p-10 rounded-lg h-full hover:border-secondary/50 transition-all border-l-4 border-l-secondary">
-                                    <div class="w-16 h-16 rounded-2xl bg-secondary-container/20 flex items-center justify-center mb-8">
-                                        <span class="material-symbols-outlined text-secondary text-3xl">strategy</span>
-                                    </div>
-                                    <h3 class="text-headline-md font-headline text-white mb-4">Strategic Planning</h3>
-                                    <p class="text-on-surface-variant leading-relaxed">Tư vấn chiến lược truyền thông đa kênh, tối ưu hóa mức độ nhận diện thương hiệu trong cộng đồng trẻ và gaming.</p>
-                                </div>
+                            <div class="glide__arrows hidden md:flex absolute left-0 right-0 top-1/2 -translate-y-1/2 justify-between px-6 z-20" data-glide-el="controls">
+                                <button class="glide__arrow glide__arrow--left w-12 h-12 rounded-full glass-card flex items-center justify-center text-white hover:bg-secondary-container transition-all" data-glide-dir="<">
+                                    <span class="material-symbols-outlined">chevron_left</span>
+                                </button>
+                                <button class="glide__arrow glide__arrow--right w-12 h-12 rounded-full glass-card flex items-center justify-center text-white hover:bg-secondary-container transition-all" data-glide-dir=">">
+                                    <span class="material-symbols-outlined">chevron_right</span>
+                                </button>
                             </div>
-                            <!-- Value Card 3 -->
-                            <div class="min-w-[320px] md:min-w-[400px] snap-center">
-                                <div class="glass-card p-10 rounded-lg h-full hover:border-secondary/50 transition-all border-l-4 border-l-secondary">
-                                    <div class="w-16 h-16 rounded-2xl bg-secondary-container/20 flex items-center justify-center mb-8">
-                                        <span class="material-symbols-outlined text-secondary text-3xl">memory</span>
-                                    </div>
-                                    <h3 class="text-headline-md font-headline text-white mb-4">Technical Innovation</h3>
-                                    <p class="text-on-surface-variant leading-relaxed">Sở hữu hệ thống trang thiết bị livestream và sản xuất hiện đại nhất, ứng dụng công nghệ AR/VR vào thực tế.</p>
-                                </div>
-                            </div>
-                            <!-- Value Card 4 -->
-                            <div class="min-w-[320px] md:min-w-[400px] snap-center">
-                                <div class="glass-card p-10 rounded-lg h-full hover:border-secondary/50 transition-all border-l-4 border-l-secondary">
-                                    <div class="w-16 h-16 rounded-2xl bg-secondary-container/20 flex items-center justify-center mb-8">
-                                        <span class="material-symbols-outlined text-secondary text-3xl">verified</span>
-                                    </div>
-                                    <h3 class="text-headline-md font-headline text-white mb-4">Professional Execution</h3>
-                                    <p class="text-on-surface-variant leading-relaxed">Quy trình vận hành chuyên nghiệp, cam kết tiến độ và chất lượng dịch vụ ở mức cao nhất cho khách hàng.</p>
-                                </div>
-                            </div>
+                            <div class="glide__bullets mt-6 flex justify-center gap-2" data-glide-el="controls[nav]"></div>
                         </div>
                     </div>
                 </div>
@@ -225,7 +258,7 @@
                 <div class="max-w-4xl mx-auto px-8 text-center">
                     <h2 class="font-headline text-headline-lg text-white mb-8">BẠN ĐÃ SẴN SÀNG ĐỂ TẠO NÊN <br /><span class="text-secondary">SỰ KHÁC BIỆT?</span></h2>
                     <p class="font-body text-body-lg text-white/80 mb-8">Liên hệ với chúng tôi ngay hôm nay để nhận được sự tư vấn chuyên sâu về các giải pháp media và sự kiện hàng đầu.</p>
-                    <a class="inline-block bg-white text-black px-8 py-4 rounded-full hover:scale-105 transition-transform" href="lien-he.html#contact">LIÊN HỆ NGAY</a>
+                    <a class="inline-block bg-white text-black px-8 py-4 hover:scale-105 transition-transform" href="lien-he.html#contact">LIÊN HỆ NGAY</a>
                 </div>
             </section>
 
@@ -270,6 +303,7 @@
         </footer>
 
         <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.5.2/dist/glide.min.js"></script>
         <script src="assets/js/site.js"></script>
     </body>
 </html>

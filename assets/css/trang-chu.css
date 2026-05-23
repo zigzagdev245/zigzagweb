@@ -34,6 +34,25 @@ body {
     background: linear-gradient(to right, transparent, rgba(184, 195, 255, 0.3), transparent);
 }
 
+.timeline-item h4,
+.timeline-item p {
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease,
+        text-shadow 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.timeline-item:hover h4 {
+    transform: scale(1.05);
+    text-shadow: 0 0 5px rgba(184, 195, 255, 0.75);
+}
+
+.timeline-item:hover p {
+    color: #ffffff;
+    opacity: 1;
+}
+
 .no-scrollbar::-webkit-scrollbar {
     display: none;
 }
