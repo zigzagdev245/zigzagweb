@@ -20,6 +20,8 @@
                     perView: 3,
                     gap: 32,
                     focusAt: "center",
+                    autoplay: 4000,
+                    hoverpause: true,
                     breakpoints: {
                         1024: { perView: 2, gap: 24 },
                         768: { perView: 1, gap: 16 },
